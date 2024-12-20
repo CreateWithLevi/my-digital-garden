@@ -3,7 +3,7 @@
 ## 開始創作並不難，把最簡單的第一步寫出來，一次一小步地享受這段旅程，一起開始創作吧！
 
 這是創作 Bar. 的第一篇文章， 現在是 2021/04/20 下午 4:50， 我給自己訂了一些規則、想了一些 Idea：
-![[Pasted image 20241220112301.png]]
+
 - po 第一篇文
 - 把網站上線
 - 定期 po 文
@@ -17,16 +17,16 @@
 
 - po 第一篇文（po 在我用 Webflow 做的簡易網站）
 
-![](image.png)
+![](/images/image.png)
 
-![](_image.png)
+![](/images/_image.png)
 
-![](__image.png)
+![](/images/__image.png)
 
 - 把網站上線（買了一年份的 Webflow CMS Hosting，5400 元)
 
-![](___image.png)
+![](/images/___image.png)
 
-![](____image.png)
+![](/images/____image.png)
 
 也許這會是帶來一場改變的開始，開始創作並不難，把最簡單的第一步寫出來，一次一小步地享受這段旅程，一起開始創作吧！
