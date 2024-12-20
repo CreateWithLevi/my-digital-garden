@@ -40,5 +40,3 @@ for filename in os.listdir(posts_dir):
         with open(filepath, "w") as file:
             file.write(content)
         print(f"Updated file: {filepath}")
-
-print("Markdown files processed and images copied successfully.")
