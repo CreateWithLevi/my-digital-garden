@@ -18,6 +18,11 @@ PageTitle.css = `
   font-size: 2rem;
   margin: 0;
 }
+@media (min-width: 800px) {
+  .page-title {
+    margin-bottom: -2.46rem;
+  }
+}
 @media (max-width: 480px) {
   .page-title {
     font-size: 1.5rem;
