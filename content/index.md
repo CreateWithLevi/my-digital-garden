@@ -12,7 +12,7 @@ tags:
 
 ## Here's the home, come back when you feel lost
 ### What do you want to know?
--I am learning a variety of new topics. I want to share meaningful insights while I create. Things I really care about instead throwing tons of information to here.
+- I am learning a variety of new topics. I want to share meaningful insights while I create. Things I really care about instead throwing tons of information to here.
 ### How do I create?
 - A simple way that I'm using: 
 	1. Set a vision for what you want to create, just like the above. 
