@@ -73,7 +73,7 @@ a {
 }
 
 // Dark Mode
-@media (prefers-color-scheme: dark) {
+:root[saved-theme=dark]{
   
   .card {
     background-color: rgba(35, 38, 52, 0.8);
@@ -85,5 +85,9 @@ a {
     &:hover {
       color: rgb(62, 120, 157);
     }
+  }
+
+  h2 {
+    color: rgb(101, 146, 157);
   }
 }
