@@ -325,6 +325,7 @@ thead {
   margin-bottom: 0;
 
   article > & > a[role="anchor"] {
+    display: none;
     color: var(--dark);
     background-color: transparent;
   }

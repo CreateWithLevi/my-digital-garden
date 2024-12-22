@@ -1,5 +1,7 @@
 ---
 title: Home
+aliases:
+  - Home
 tags:
   - "#note/develop🍃"
 ---
@@ -23,6 +25,7 @@ tags:
 ### Create with me!
 - I am building my online presence, this website may become the creative center for it.
 - I am building software products, it has become really fun for me after AI comes out.
+- I am preparing to live abroad with my wife, here's my [[Live Abroad MOC|Note for Living Abroad]].
 
 ## Milestones
 - M:: The Art of Focus / Try to create
