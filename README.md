@@ -107,7 +107,6 @@ npx quartz sync --no-pull # Sync content without pulling
 
 如果你喜歡我的內容並想要支持持續創作，歡迎透過以下方式贊助：
 
-- [GitHub Sponsors](https://github.com/sponsors/jackyzha0)
 - [Buy Me a Coffee](https://www.buymeacoffee.com/YourUsername)
 
 ---
@@ -119,8 +118,6 @@ npx quartz sync --no-pull # Sync content without pulling
 ### Contact | 交流方式
 
 - 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-- 💬 Discord: [Join our community](https://discord.gg/your-invite)
-- 🐦 Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
 - 📝 Blog: [Your Blog](https://your-blog-url.com)
 
 期待在這個數位花園裡，與你一同探索、成長、創造更多可能性！
