@@ -1,7 +1,7 @@
 ---
 title: Home
 aliases:
-  - Home
+  - CreateWithLevi
 tags:
   - "#note/develop🍃"
 ---
@@ -34,7 +34,7 @@ tags:
 	- on:: 2025-01-20
 
 [[Library]]
-[[Creating]]
+[[創造]]
 [[Create with Levi]]
-[[My Online Presence]]
+[[經營線上簡歷]]
 [[Efforts]]
