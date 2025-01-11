@@ -1,66 +1,42 @@
 ---
-obsidianUIMode: preview
+title: CreateWithLevi EN
+aliases:
+  - CreateWithLevi EN
+tags:
+  - "#note/develop🍃"
 ---
-> [!Map]- # Atlas (知識)
-> > *Where would you like to go?*
-> 
-> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
->   
-> ![[mckie-ship-and-sea-mid-narrow-.jpg|400]]
-> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
-> - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]]. 
-> - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[PKM Map]].
+## Vision for CreateWithLevi
+- A vessel for my ideas to grow and to impact others
+- For me, it's a playground. 
+	- I want to link my ideas, make sense and also make use of them
+	- I create whatever feels right at the moment. I may write in English, Chinese, or other languages that I'm learning.
+- For the reader, enjoy watching my game, or create with me!
 
-> [!Calendar]- # Calendar (時間)
-> > *What's on your mind?* 
-> 
-> - To journal, focus your day, or to capture a spark, hit `Cmd-d`.
-> - To capture specific type of things, go to [[Logs (Example)|Logs]].
->   
-> ![[robert-mccall-space-ship-launch-narrower.png|400]]
-> - To broadly reflect, go to [[Plan and Review]].
-> - To learn more about time travel, go to [[Calendar]].
+## Here's the home, come back when you feel lost
+### What do you want to know?
+- I am learning a variety of new topics. I want to share meaningful insights while I create. Things I really care about instead throwing tons of information to here.
+### How do I create?
+- A simple way that I'm using: 
+	1. Set a vision for what you want to create, just like the above. 
+	2. Set simple milestones and dates for what I want to achieve
+	3. Plan simple actions for the next milestone
+	4. Act and get results!
+	5. Adjust the action plan, milestones and vision on the way
+### Create with me!
+- I am building my online presence, this website may become the creative center for it.
+- I am building software products, it has become really fun for me after AI comes out.
+- I am preparing to live abroad with my wife, here's my [[Live Abroad MOC|Note for Living Abroad]].
+- [[en/VS Code Functions|VS Code Functions]]
+- [[en/Digital Garden Ideas|Digital Garden Direction]]
 
-> [!Training]- # Efforts (行動)
-> > *What can you work on?* 
-> 
-> For a concentrated view, go to [[Efforts]].
-> For a top-down view, go to [[專案]] and [[行動]]
-> 
-> Use this to keep priorities in order and the quickly adjust your bandwidth as needed. 
-> 
-> > [!Box]+ ### 🔥 進行中專案
-> > ``` dataview
-> > TABLE WITHOUT ID
->  > file.link as "",
->  > rank as "Rank"
-> > FROM "Efforts/On"
-> > SORT rank desc
-> > ```
-> 
-> > [!Box]+ ### ♻️ 長期專案
-> > ``` dataview
-> > TABLE WITHOUT ID
-> > file.link as "",
-> > rank as "Rank"
-> > FROM "Efforts/Ongoing"
-> > SORT rank desc
-> > ```
-> 
-> > [!Box]- ### 〰️ 醞釀中專案
-> > Efforts can easily move from `on` to `simmering` in the background.
-> > 
-> > ``` dataview
-> > TABLE WITHOUT ID
-> > file.link as "",
-> > rank as "Rank"
-> > FROM "Efforts/Simmering"
-> > SORT rank desc
-> > ```
-> 
-> ![[robert-mccall-black-hole-concept-art copy.jpg|400]]
+## Milestones
+- M:: The Art of Focus / Try to create
+	- on:: 2024-12-31
+- M:: Try to create and share
+	- on:: 2025-01-20
 
-![[pale-blue-dot-banner.jpg]]
-
-
-
+[[Library]]
+[[創造]]
+[[Create with Levi]]
+[[經營線上簡歷]]
+[[Efforts]]

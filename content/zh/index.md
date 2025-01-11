@@ -1,7 +1,7 @@
 ---
-title: 首頁
+title: CreateWithLevi 中文版
 aliases:
-  - CreateWithLevi中文
+  - CreateWithLevi 中文版
 tags:
   - "#note/develop🍃"
 ---
@@ -34,6 +34,8 @@ tags:
 - 我正在建立我的線上形象，這個網站可能會成為創意中心
 - 我正在開發軟體產品，自從 AI 出現後，這變得非常有趣
 - 我正在準備和太太一起移居國外，這是我的[[Live Abroad MOC|移居海外筆記]]
+- [[zh/Digital Garden Ideas|數位花園方向]]
+- [[zh/VS Code Functions|VS Code 功能]]
 
 ## 里程碑
 
