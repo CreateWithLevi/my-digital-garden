@@ -26,7 +26,6 @@ export default ((userOpts?: Partial<Options>) => {
     .darkmode-language-group {
       display: flex;
       align-items: center;
-      gap: 0rem;
     }
     
     ${DarkmodeComponent.css}

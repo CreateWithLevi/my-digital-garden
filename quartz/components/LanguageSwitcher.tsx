@@ -6,7 +6,8 @@ const LanguageSwitcher: QuartzComponent = ({ displayClass }: QuartzComponentProp
   return (
     <div class={classNames(displayClass, "language-switcher")}>
       <button id="language-button">
-        <span class="current-language">中/EN</span>
+        <div class="current-language-zh">中</div>
+        <div class="current-language-en">EN</div>
       </button>
     </div>
   )
