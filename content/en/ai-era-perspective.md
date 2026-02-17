@@ -6,6 +6,7 @@ tags:
   - personal-brand
 aliases:
   - When Knowledge Is No Longer Scarce, What Remains
+description: In the age of AI, what's truly valuable isn't knowledge itself, but your perspective and judgment
 ---
 ### AI Can Organize Knowledge, but It Doesn't Know What Matters to You
 

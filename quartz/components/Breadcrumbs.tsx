@@ -59,13 +59,18 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     allFiles,
     displayClass,
   }: QuartzComponentProps) => {
-    // Hide crumbs on root if enabled
-    if (options.hideOnRoot && fileData.slug === "index") {
+    // Hide crumbs on root and language homepages if enabled
+    if (options.hideOnRoot && (fileData.slug === "index" || fileData.slug?.match(/^(en|zh)\/index$/))) {
       return <></>
     }
 
-    // Format entry for root element
-    const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug)
+    // Detect language prefix (en/ or zh/)
+    const langMatch = fileData.slug?.match(/^(en|zh)\//)
+    const langPrefix = langMatch ? langMatch[1] : null
+
+    // Format entry for root element — point to language homepage if on a language path
+    const rootSlug = langPrefix ? (langPrefix + "/" as SimpleSlug) : ("/" as SimpleSlug)
+    const firstEntry = formatCrumb(options.rootName, fileData.slug!, rootSlug)
     const crumbs: CrumbData[] = [firstEntry]
 
     if (!folderIndex && options.resolveFrontmatterTitle) {
@@ -89,6 +94,12 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       let currentPath = ""
 
       for (let i = 0; i < slugParts.length - 1; i++) {
+        // Skip the language folder segment — already covered by Home
+        if (i === 0 && langPrefix && slugParts[i] === langPrefix) {
+          currentPath = joinSegments(currentPath, slugParts[i])
+          continue
+        }
+
         let curPathSegment = slugParts[i]
 
         // Try to resolve frontmatter folder title
