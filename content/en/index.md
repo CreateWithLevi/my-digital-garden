@@ -1,9 +1,7 @@
 ---
-title: CreateWithLevi EN
+title: CreateWithLevi
 aliases:
   - CreateWithLevi EN
-tags:
-  - "#note/develop🍃"
 ---
 ## Vision for CreateWithLevi
 - A vessel for my ideas to grow and to impact others
@@ -25,9 +23,9 @@ tags:
 ### Create with me!
 - I am building my online presence, this website may become the creative center for it.
 - I am building software products, it has become really fun for me after AI comes out.
-- I am preparing to live abroad with my wife, here's my [[Live Abroad MOC|Note for Living Abroad]].
-- [[en/VS Code Functions|VS Code Functions]]
-- [[en/Digital Garden Ideas|Digital Garden Direction]]
+- I am preparing to live abroad with my wife, here's my [[國外生活相關|Note for Living Abroad]].
+- [[知識/筆記/Public/en/VS Code Functions|VS Code Functions]]
+- [[知識/筆記/Public/en/Digital Garden Ideas|Digital Garden Direction]]
 
 ## Milestones
 - M:: The Art of Focus / Try to create
@@ -35,8 +33,8 @@ tags:
 - M:: Try to create and share
 	- on:: 2025-01-20
 
-[[Library]]
+[[知識]]
 [[創造]]
-[[Create with Levi]]
-[[經營線上簡歷]]
-[[Efforts]]
+[[以前的CreatewithLevi]]
+[[建立線上履歷]]
+[[努力]]

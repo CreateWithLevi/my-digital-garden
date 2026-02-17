@@ -6,8 +6,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 # Set variables for Obsidian to Quartz copy
-sourcePath="/Users/levi/Library/Mobile Documents/iCloud~md~obsidian/Documents/Ideaverse/Public/"
-destinationPath="/Users/levi/Documents/createwithlevi/content"
+sourcePath="/Users/levi/Library/Mobile Documents/iCloud~md~obsidian/Documents/Ideaverse/知識/筆記/Public/"
+destinationPath="/Users/levi/Documents/CreatewithLevi/createwithlevi/content"
 
 # Set GitHub Repo
 myrepo="my-digital-garden"

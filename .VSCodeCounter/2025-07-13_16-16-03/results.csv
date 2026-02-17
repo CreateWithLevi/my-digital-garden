@@ -1,0 +1,254 @@
+"filename", "language", "TypeScript", "Markdown", "JavaScript", "CSS", "TypeScript JSX", "SCSS", "JSON with Comments", "Python", "JSON", "YAML", "Ignore", "Docker", "Shell Script", "comment", "blank", "total"
+"/Users/levi/Documents/Code/createwithlevi/.github/FUNDING.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2
+"/Users/levi/Documents/Code/createwithlevi/.github/ISSUE_TEMPLATE/bug_report.md", "Markdown", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 41
+"/Users/levi/Documents/Code/createwithlevi/.github/ISSUE_TEMPLATE/feature_request.md", "Markdown", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 20
+"/Users/levi/Documents/Code/createwithlevi/.github/dependabot.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 1, 21
+"/Users/levi/Documents/Code/createwithlevi/.github/workflows/ci.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 10, 73
+"/Users/levi/Documents/Code/createwithlevi/.github/workflows/deploy.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 6, 46
+"/Users/levi/Documents/Code/createwithlevi/.github/workflows/docker-build-push.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 0, 0, 0, 0, 5, 89
+"/Users/levi/Documents/Code/createwithlevi/.prettierignore", "Ignore", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"/Users/levi/Documents/Code/createwithlevi/.prettierrc", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 8
+"/Users/levi/Documents/Code/createwithlevi/CODE_OF_CONDUCT.md", "Markdown", 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 91
+"/Users/levi/Documents/Code/createwithlevi/Dockerfile", "Docker", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"/Users/levi/Documents/Code/createwithlevi/README.md", "Markdown", 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 124
+"/Users/levi/Documents/Code/createwithlevi/content/en/Digital Garden Ideas.md", "Markdown", 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 76
+"/Users/levi/Documents/Code/createwithlevi/content/en/VS Code Functions.md", "Markdown", 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 77
+"/Users/levi/Documents/Code/createwithlevi/content/en/index.md", "Markdown", 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 40
+"/Users/levi/Documents/Code/createwithlevi/content/index.md", "Markdown", 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"/Users/levi/Documents/Code/createwithlevi/content/zh/Digital Garden Ideas.md", "Markdown", 0, 125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 169
+"/Users/levi/Documents/Code/createwithlevi/content/zh/VS Code Functions.md", "Markdown", 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 76
+"/Users/levi/Documents/Code/createwithlevi/content/zh/index.md", "Markdown", 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 56
+"/Users/levi/Documents/Code/createwithlevi/content/zh/申請德國機會卡經驗分享.md", "Markdown", 0, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 96
+"/Users/levi/Documents/Code/createwithlevi/docs/advanced/architecture.md", "Markdown", 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 53
+"/Users/levi/Documents/Code/createwithlevi/docs/advanced/creating components.md", "Markdown", 0, 172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 235
+"/Users/levi/Documents/Code/createwithlevi/docs/advanced/index.md", "Markdown", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/levi/Documents/Code/createwithlevi/docs/advanced/making plugins.md", "Markdown", 0, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 306
+"/Users/levi/Documents/Code/createwithlevi/docs/advanced/paths.md", "Markdown", 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 52
+"/Users/levi/Documents/Code/createwithlevi/docs/authoring content.md", "Markdown", 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 46
+"/Users/levi/Documents/Code/createwithlevi/docs/build.md", "Markdown", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 28
+"/Users/levi/Documents/Code/createwithlevi/docs/configuration.md", "Markdown", 0, 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 111
+"/Users/levi/Documents/Code/createwithlevi/docs/features/Docker Support.md", "Markdown", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8
+"/Users/levi/Documents/Code/createwithlevi/docs/features/Latex.md", "Markdown", 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 83
+"/Users/levi/Documents/Code/createwithlevi/docs/features/Mermaid diagrams.md", "Markdown", 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 35
+"/Users/levi/Documents/Code/createwithlevi/docs/features/Obsidian compatibility.md", "Markdown", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 18
+"/Users/levi/Documents/Code/createwithlevi/docs/features/OxHugo compatibility.md", "Markdown", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 30
+"/Users/levi/Documents/Code/createwithlevi/docs/features/RSS Feed.md", "Markdown", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6
+"/Users/levi/Documents/Code/createwithlevi/docs/features/Roam Research compatibility.md", "Markdown", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 29
+"/Users/levi/Documents/Code/createwithlevi/docs/features/SPA Routing.md", "Markdown", 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8
+"/Users/levi/Documents/Code/createwithlevi/docs/features/backlinks.md", "Markdown", 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 16
+"/Users/levi/Documents/Code/createwithlevi/docs/features/breadcrumbs.md", "Markdown", 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 37
+"/Users/levi/Documents/Code/createwithlevi/docs/features/callouts.md", "Markdown", 0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 97
+"/Users/levi/Documents/Code/createwithlevi/docs/features/comments.md", "Markdown", 0, 95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 128
+"/Users/levi/Documents/Code/createwithlevi/docs/features/darkmode.md", "Markdown", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 24
+"/Users/levi/Documents/Code/createwithlevi/docs/features/explorer.md", "Markdown", 0, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 320
+"/Users/levi/Documents/Code/createwithlevi/docs/features/folder and tag listings.md", "Markdown", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 34
+"/Users/levi/Documents/Code/createwithlevi/docs/features/full-text search.md", "Markdown", 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 31
+"/Users/levi/Documents/Code/createwithlevi/docs/features/graph view.md", "Markdown", 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 64
+"/Users/levi/Documents/Code/createwithlevi/docs/features/i18n.md", "Markdown", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/features/index.md", "Markdown", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/levi/Documents/Code/createwithlevi/docs/features/popover previews.md", "Markdown", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 18
+"/Users/levi/Documents/Code/createwithlevi/docs/features/private pages.md", "Markdown", 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 36
+"/Users/levi/Documents/Code/createwithlevi/docs/features/recent notes.md", "Markdown", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/levi/Documents/Code/createwithlevi/docs/features/social images.md", "Markdown", 0, 352, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 402
+"/Users/levi/Documents/Code/createwithlevi/docs/features/syntax highlighting.md", "Markdown", 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 144
+"/Users/levi/Documents/Code/createwithlevi/docs/features/table of contents.md", "Markdown", 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/features/upcoming features.md", "Markdown", 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/levi/Documents/Code/createwithlevi/docs/features/wikilinks.md", "Markdown", 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 25
+"/Users/levi/Documents/Code/createwithlevi/docs/hosting.md", "Markdown", 0, 219, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 289
+"/Users/levi/Documents/Code/createwithlevi/docs/index.md", "Markdown", 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 47
+"/Users/levi/Documents/Code/createwithlevi/docs/layout.md", "Markdown", 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 65
+"/Users/levi/Documents/Code/createwithlevi/docs/migrating from Quartz 3.md", "Markdown", 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 42
+"/Users/levi/Documents/Code/createwithlevi/docs/philosophy.md", "Markdown", 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 48
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/AliasRedirects.md", "Markdown", 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 38
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/Assets.md", "Markdown", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 21
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/CNAME.md", "Markdown", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 23
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/ComponentResources.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/ContentIndex.md", "Markdown", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 27
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/ContentPage.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/CrawlLinks.md", "Markdown", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 31
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/CreatedModifiedDate.md", "Markdown", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 26
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/Description.md", "Markdown", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 24
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/ExplicitPublish.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/FolderPage.md", "Markdown", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 25
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/Frontmatter.md", "Markdown", 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 25
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/GitHubFlavoredMarkdown.md", "Markdown", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 24
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/HardLineBreaks.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/Latex.md", "Markdown", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 26
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/NotFoundPage.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/ObsidianFlavoredMarkdown.md", "Markdown", 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 35
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/OxHugoFlavoredMarkdown.md", "Markdown", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 30
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/RemoveDrafts.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/RoamFlavoredMarkdown.md", "Markdown", 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 27
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/Static.md", "Markdown", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 22
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/SyntaxHighlighting.md", "Markdown", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 24
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/TableOfContents.md", "Markdown", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 27
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/TagPage.md", "Markdown", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 23
+"/Users/levi/Documents/Code/createwithlevi/docs/plugins/index.md", "Markdown", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/levi/Documents/Code/createwithlevi/docs/setting up your GitHub repository.md", "Markdown", 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 49
+"/Users/levi/Documents/Code/createwithlevi/docs/showcase.md", "Markdown", 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 37
+"/Users/levi/Documents/Code/createwithlevi/docs/tags/component.md", "Markdown", 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/levi/Documents/Code/createwithlevi/docs/tags/plugin.md", "Markdown", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/levi/Documents/Code/createwithlevi/docs/upgrading.md", "Markdown", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 20
+"/Users/levi/Documents/Code/createwithlevi/globals.d.ts", "TypeScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"/Users/levi/Documents/Code/createwithlevi/images.py", "Python", 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 9, 12, 61
+"/Users/levi/Documents/Code/createwithlevi/index.d.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 13
+"/Users/levi/Documents/Code/createwithlevi/package-lock.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 8134, 0, 0, 0, 0, 0, 1, 8135
+"/Users/levi/Documents/Code/createwithlevi/package.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 1, 116
+"/Users/levi/Documents/Code/createwithlevi/quartz.config.ts", "TypeScript", 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 3, 96
+"/Users/levi/Documents/Code/createwithlevi/quartz.layout.ts", "TypeScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 51
+"/Users/levi/Documents/Code/createwithlevi/quartz/bootstrap-cli.mjs", "JavaScript", 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 42
+"/Users/levi/Documents/Code/createwithlevi/quartz/bootstrap-worker.mjs", "JavaScript", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/levi/Documents/Code/createwithlevi/quartz/build.ts", "TypeScript", 317, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 67, 423
+"/Users/levi/Documents/Code/createwithlevi/quartz/cfg.ts", "TypeScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 6, 98
+"/Users/levi/Documents/Code/createwithlevi/quartz/cli/args.js", "JavaScript", 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 109
+"/Users/levi/Documents/Code/createwithlevi/quartz/cli/constants.js", "JavaScript", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 16
+"/Users/levi/Documents/Code/createwithlevi/quartz/cli/handlers.js", "JavaScript", 0, 0, 471, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 50, 577
+"/Users/levi/Documents/Code/createwithlevi/quartz/cli/helpers.js", "JavaScript", 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 55
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/ArticleTitle.tsx", "TypeScript JSX", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 20
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Backlinks.tsx", "TypeScript JSX", 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 53
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Body.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 14
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Breadcrumbs.tsx", "TypeScript JSX", 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 0, 27, 19, 140
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Comments.tsx", "TypeScript JSX", 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7, 61
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/ContentMeta.tsx", "TypeScript JSX", 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 5, 11, 59
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Darkmode.tsx", "TypeScript JSX", 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 51
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/DarkmodeLanguageGroup.tsx", "TypeScript JSX", 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10, 47
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Date.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 32
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/DesktopOnly.tsx", "TypeScript JSX", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Explorer.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 12, 12, 129
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/ExplorerNode.tsx", "TypeScript JSX", 0, 0, 0, 0, 182, 0, 0, 0, 0, 0, 0, 0, 0, 34, 27, 243
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 33
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Graph.tsx", "TypeScript JSX", 0, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 107
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Head.tsx", "TypeScript JSX", 0, 0, 0, 0, 159, 0, 0, 0, 0, 0, 0, 0, 0, 23, 28, 210
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/LanguageSwitcher.tsx", "TypeScript JSX", 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/MobileOnly.tsx", "TypeScript JSX", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/PageList.tsx", "TypeScript JSX", 0, 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 88
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/PageTitle.tsx", "TypeScript JSX", 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 34
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/RecentNotes.tsx", "TypeScript JSX", 0, 0, 0, 0, 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 94
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Search.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6, 54
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/Spacer.tsx", "TypeScript JSX", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/TableOfContents.tsx", "TypeScript JSX", 0, 0, 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 96
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/TagList.tsx", "TypeScript JSX", 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 58
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/index.ts", "TypeScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 53
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/pages/404.tsx", "TypeScript JSX", 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 19
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/pages/Content.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/pages/FolderContent.tsx", "TypeScript JSX", 0, 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15, 108
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/pages/TagContent.tsx", "TypeScript JSX", 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 128
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/renderPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 248, 0, 0, 0, 0, 0, 0, 0, 0, 13, 20, 281
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/callout.inline.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 45
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/checkbox.inline.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 24
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/clipboard.inline.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 38
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/comments.inline.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 92
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/darkmode.inline.ts", "TypeScript", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 39
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/explorer.inline.ts", "TypeScript", 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 17, 136
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/graph.inline.ts", "TypeScript", 511, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 79, 602
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/mermaid.inline.ts", "TypeScript", 189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 47, 249
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/popover.inline.ts", "TypeScript", 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17, 110
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/search.inline.ts", "TypeScript", 417, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 55, 494
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/spa.inline.ts", "TypeScript", 166, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 29, 204
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/toc.inline.ts", "TypeScript", 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 48
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/util.ts", "TypeScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 6, 46
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/backlinks.scss", "SCSS", 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 12, 6, 45
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/breadcrumbs.scss", "SCSS", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/clipboard.scss", "SCSS", 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 5, 37
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/contentMeta.scss", "SCSS", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/darkmode.scss", "SCSS", 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 6, 47
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/explorer.scss", "SCSS", 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 0, 14, 24, 182
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/footer.scss", "SCSS", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 2, 16
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/graph.scss", "SCSS", 0, 0, 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 0, 8, 74
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/languageSwitcher.scss", "SCSS", 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 7, 34
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/legacyToc.scss", "SCSS", 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 5, 28
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/listPage.scss", "SCSS", 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 1, 9, 41
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/mermaid.inline.scss", "SCSS", 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 0, 1, 19, 164
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/popover.scss", "SCSS", 0, 0, 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 11, 84
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/recentNotes.scss", "SCSS", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 4, 25
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/search.scss", "SCSS", 0, 0, 0, 0, 0, 199, 0, 0, 0, 0, 0, 0, 0, 1, 35, 235
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/styles/toc.scss", "SCSS", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 0, 13, 94
+"/Users/levi/Documents/Code/createwithlevi/quartz/components/types.ts", "TypeScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 30
+"/Users/levi/Documents/Code/createwithlevi/quartz/depgraph.test.ts", "TypeScript", 89, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 19, 119
+"/Users/levi/Documents/Code/createwithlevi/quartz/depgraph.ts", "TypeScript", 156, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 41, 229
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/index.ts", "TypeScript", 74, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 77
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ar-SA.ts", "TypeScript", 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 90
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ca-ES.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/cs-CZ.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/de-DE.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/definition.ts", "TypeScript", 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/en-GB.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/en-US.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/es-ES.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/fa-IR.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/fr-FR.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/hu-HU.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/it-IT.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ja-JP.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ko-KR.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/nl-NL.ts", "TypeScript", 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 87
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/pl-PL.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/pt-BR.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ro-RO.ts", "TypeScript", 84, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 86
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ru-RU.ts", "TypeScript", 93, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 97
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/tr-TR.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/uk-UA.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/vi-VN.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 85
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/zh-CN.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/zh-TW.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/404.tsx", "TypeScript JSX", 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 69
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/aliases.ts", "TypeScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 10, 82
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/assets.ts", "TypeScript", 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10, 59
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/cname.ts", "TypeScript", 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 34
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/componentResources.ts", "TypeScript", 247, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 29, 291
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/contentIndex.ts", "TypeScript", 164, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19, 186
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/contentPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 118, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19, 143
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/folderPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15, 146
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/helpers.ts", "TypeScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/index.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/static.ts", "TypeScript", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/tagPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 0, 2, 15, 143
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/draft.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/explicit.ts", "TypeScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/index.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/index.ts", "TypeScript", 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 53
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/citations.ts", "TypeScript", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 7, 55
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/description.ts", "TypeScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 83
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/frontmatter.ts", "TypeScript", 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 16, 120
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/gfm.ts", "TypeScript", 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 79
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/index.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/lastmod.ts", "TypeScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10, 96
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/latex.ts", "TypeScript", 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 68
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/linebreaks.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/links.ts", "TypeScript", 145, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 17, 173
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/ofm.ts", "TypeScript", 727, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 66, 833
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/oxhugofm.ts", "TypeScript", 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 11, 107
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/roam.ts", "TypeScript", 197, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 23, 225
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/syntax.ts", "TypeScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 32
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/toc.ts", "TypeScript", 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 74
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/types.ts", "TypeScript", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 48
+"/Users/levi/Documents/Code/createwithlevi/quartz/plugins/vfile.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15
+"/Users/levi/Documents/Code/createwithlevi/quartz/processors/emit.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 34
+"/Users/levi/Documents/Code/createwithlevi/quartz/processors/filter.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/levi/Documents/Code/createwithlevi/quartz/processors/parse.ts", "TypeScript", 165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 26, 201
+"/Users/levi/Documents/Code/createwithlevi/quartz/static/giscus/dark.css", "CSS", 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 100
+"/Users/levi/Documents/Code/createwithlevi/quartz/static/giscus/light.css", "CSS", 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 100
+"/Users/levi/Documents/Code/createwithlevi/quartz/styles/base.scss", "SCSS", 0, 0, 0, 0, 0, 511, 0, 0, 0, 0, 0, 0, 0, 15, 77, 603
+"/Users/levi/Documents/Code/createwithlevi/quartz/styles/callouts.scss", "SCSS", 0, 0, 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 0, 1, 25, 163
+"/Users/levi/Documents/Code/createwithlevi/quartz/styles/custom.scss", "SCSS", 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 7, 18, 95
+"/Users/levi/Documents/Code/createwithlevi/quartz/styles/syntax.scss", "SCSS", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/levi/Documents/Code/createwithlevi/quartz/styles/variables.scss", "SCSS", 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 7, 4, 57
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/ctx.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 22
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/escape.ts", "TypeScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 18
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/glob.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/jsx.tsx", "TypeScript JSX", 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 28
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/lang.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/log.ts", "TypeScript", 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 29
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/og.tsx", "TypeScript JSX", 0, 0, 0, 0, 121, 0, 0, 0, 0, 0, 0, 0, 0, 67, 15, 203
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/path.test.ts", "TypeScript", 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 30, 306
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/path.ts", "TypeScript", 240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 55, 312
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/perf.ts", "TypeScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 20
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/resources.tsx", "TypeScript JSX", 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 66
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/sourcemap.ts", "TypeScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 19
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/theme.ts", "TypeScript", 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 73
+"/Users/levi/Documents/Code/createwithlevi/quartz/util/trace.ts", "TypeScript", 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7, 44
+"/Users/levi/Documents/Code/createwithlevi/quartz/worker.ts", "TypeScript", 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 3, 49
+"/Users/levi/Documents/Code/createwithlevi/sync_blog.sh", "Shell Script", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 6, 10, 41
+"/Users/levi/Documents/Code/createwithlevi/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"Total", "-", 8119, 3412, 684, 180, 2526, 1734, 20, 40, 8256, 208, 3, 10, 25, 699, 2857, 28773

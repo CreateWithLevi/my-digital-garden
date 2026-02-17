@@ -1,0 +1,324 @@
+Date : 2025-07-13 16:16:03
+Directory : /Users/levi/Documents/Code/createwithlevi
+Total : 252 files,  25217 codes, 699 comments, 2857 blanks, all 28773 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |      8,256 |          0 |          3 |      8,259 |
+| TypeScript         |         91 |      8,119 |        345 |        938 |      9,402 |
+| Markdown           |         82 |      3,412 |          0 |      1,167 |      4,579 |
+| TypeScript JSX     |         37 |      2,526 |        211 |        338 |      3,075 |
+| SCSS               |         21 |      1,734 |         59 |        287 |      2,080 |
+| JavaScript         |          6 |        684 |         59 |         65 |        808 |
+| YAML               |          5 |        208 |          0 |         23 |        231 |
+| CSS                |          2 |        180 |         10 |         10 |        200 |
+| Python             |          1 |         40 |          9 |         12 |         61 |
+| Shell Script       |          1 |         25 |          6 |         10 |         41 |
+| JSON with Comments |          1 |         20 |          0 |          1 |         21 |
+| Docker             |          1 |         10 |          0 |          2 |         12 |
+| Ignore             |          1 |          3 |          0 |          1 |          4 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                     | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                        |        252 |     25,217 |        699 |      2,857 |     28,773 |
+| . (Files)                                                                                |         14 |      8,640 |         24 |        127 |      8,791 |
+| .github                                                                                  |          7 |        253 |          0 |         39 |        292 |
+| .github (Files)                                                                          |          2 |         21 |          0 |          2 |         23 |
+| .github/ISSUE_TEMPLATE                                                                   |          2 |         45 |          0 |         16 |         61 |
+| .github/workflows                                                                        |          3 |        187 |          0 |         21 |        208 |
+| content                                                                                  |          8 |        452 |          0 |        147 |        599 |
+| content (Files)                                                                          |          1 |          7 |          0 |          2 |          9 |
+| content/en                                                                               |          3 |        149 |          0 |         44 |        193 |
+| content/zh                                                                               |          4 |        296 |          0 |        101 |        397 |
+| docs                                                                                     |         70 |      2,787 |          0 |        917 |      3,704 |
+| docs (Files)                                                                             |         11 |        577 |          0 |        205 |        782 |
+| docs/advanced                                                                            |          5 |        513 |          0 |        137 |        650 |
+| docs/features                                                                            |         27 |      1,277 |          0 |        389 |      1,666 |
+| docs/plugins                                                                             |         25 |        413 |          0 |        183 |        596 |
+| docs/tags                                                                                |          2 |          7 |          0 |          3 |         10 |
+| quartz                                                                                   |        153 |     13,085 |        675 |      1,627 |     15,387 |
+| quartz (Files)                                                                           |          7 |        724 |        106 |        139 |        969 |
+| quartz/cli                                                                               |          4 |        636 |         59 |         62 |        757 |
+| quartz/components                                                                        |         61 |      4,674 |        246 |        711 |      5,631 |
+| quartz/components (Files)                                                                |         28 |      1,733 |        129 |        231 |      2,093 |
+| quartz/components/pages                                                                  |          4 |        228 |          4 |         35 |        267 |
+| quartz/components/scripts                                                                |         13 |      1,757 |         84 |        286 |      2,127 |
+| quartz/components/styles                                                                 |         16 |        956 |         29 |        159 |      1,144 |
+| quartz/i18n                                                                              |         25 |      2,073 |          0 |         54 |      2,127 |
+| quartz/i18n (Files)                                                                      |          1 |         74 |          0 |          3 |         77 |
+| quartz/i18n/locales                                                                      |         24 |      1,999 |          0 |         51 |      2,050 |
+| quartz/plugins                                                                           |         32 |      2,868 |        123 |        339 |      3,330 |
+| quartz/plugins (Files)                                                                   |          3 |         97 |          3 |         16 |        116 |
+| quartz/plugins/emitters                                                                  |         12 |      1,054 |         32 |        134 |      1,220 |
+| quartz/plugins/filters                                                                   |          3 |         18 |          0 |          5 |         23 |
+| quartz/plugins/transformers                                                              |         14 |      1,699 |         88 |        184 |      1,971 |
+| quartz/processors                                                                        |          3 |        213 |         10 |         37 |        260 |
+| quartz/static                                                                            |          2 |        180 |         10 |         10 |        200 |
+| quartz/static/giscus                                                                     |          2 |        180 |         10 |         10 |        200 |
+| quartz/styles                                                                            |          5 |        778 |         30 |        128 |        936 |
+| quartz/util                                                                              |         14 |        939 |         91 |        147 |      1,177 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                 | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/levi/Documents/Code/createwithlevi/.github/FUNDING.yml                            | YAML               |          1 |          0 |          1 |          2 |
+| /Users/levi/Documents/Code/createwithlevi/.github/ISSUE_TEMPLATE/bug_report.md           | Markdown           |         30 |          0 |         11 |         41 |
+| /Users/levi/Documents/Code/createwithlevi/.github/ISSUE_TEMPLATE/feature_request.md      | Markdown           |         15 |          0 |          5 |         20 |
+| /Users/levi/Documents/Code/createwithlevi/.github/dependabot.yml                         | YAML               |         20 |          0 |          1 |         21 |
+| /Users/levi/Documents/Code/createwithlevi/.github/workflows/ci.yaml                      | YAML               |         63 |          0 |         10 |         73 |
+| /Users/levi/Documents/Code/createwithlevi/.github/workflows/deploy.yml                   | YAML               |         40 |          0 |          6 |         46 |
+| /Users/levi/Documents/Code/createwithlevi/.github/workflows/docker-build-push.yaml       | YAML               |         84 |          0 |          5 |         89 |
+| /Users/levi/Documents/Code/createwithlevi/.prettierignore                                | Ignore             |          3 |          0 |          1 |          4 |
+| /Users/levi/Documents/Code/createwithlevi/.prettierrc                                    | JSON               |          7 |          0 |          1 |          8 |
+| /Users/levi/Documents/Code/createwithlevi/CODE_OF_CONDUCT.md                             | Markdown           |         53 |          0 |         38 |         91 |
+| /Users/levi/Documents/Code/createwithlevi/Dockerfile                                     | Docker             |         10 |          0 |          2 |         12 |
+| /Users/levi/Documents/Code/createwithlevi/README.md                                      | Markdown           |         75 |          0 |         49 |        124 |
+| /Users/levi/Documents/Code/createwithlevi/content/en/Digital Garden Ideas.md             | Markdown           |         53 |          0 |         23 |         76 |
+| /Users/levi/Documents/Code/createwithlevi/content/en/VS Code Functions.md                | Markdown           |         59 |          0 |         18 |         77 |
+| /Users/levi/Documents/Code/createwithlevi/content/en/index.md                            | Markdown           |         37 |          0 |          3 |         40 |
+| /Users/levi/Documents/Code/createwithlevi/content/index.md                               | Markdown           |          7 |          0 |          2 |          9 |
+| /Users/levi/Documents/Code/createwithlevi/content/zh/Digital Garden Ideas.md             | Markdown           |        125 |          0 |         44 |        169 |
+| /Users/levi/Documents/Code/createwithlevi/content/zh/VS Code Functions.md                | Markdown           |         59 |          0 |         17 |         76 |
+| /Users/levi/Documents/Code/createwithlevi/content/zh/index.md                            | Markdown           |         43 |          0 |         13 |         56 |
+| /Users/levi/Documents/Code/createwithlevi/content/zh/申請德國機會卡經驗分享.md                      | Markdown           |         69 |          0 |         27 |         96 |
+| /Users/levi/Documents/Code/createwithlevi/docs/advanced/architecture.md                  | Markdown           |         45 |          0 |          8 |         53 |
+| /Users/levi/Documents/Code/createwithlevi/docs/advanced/creating components.md           | Markdown           |        172 |          0 |         63 |        235 |
+| /Users/levi/Documents/Code/createwithlevi/docs/advanced/index.md                         | Markdown           |          3 |          0 |          1 |          4 |
+| /Users/levi/Documents/Code/createwithlevi/docs/advanced/making plugins.md                | Markdown           |        256 |          0 |         50 |        306 |
+| /Users/levi/Documents/Code/createwithlevi/docs/advanced/paths.md                         | Markdown           |         37 |          0 |         15 |         52 |
+| /Users/levi/Documents/Code/createwithlevi/docs/authoring content.md                      | Markdown           |         31 |          0 |         15 |         46 |
+| /Users/levi/Documents/Code/createwithlevi/docs/build.md                                  | Markdown           |         22 |          0 |          6 |         28 |
+| /Users/levi/Documents/Code/createwithlevi/docs/configuration.md                          | Markdown           |         87 |          0 |         24 |        111 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/Docker Support.md                | Markdown           |          5 |          0 |          3 |          8 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/Latex.md                         | Markdown           |         60 |          0 |         23 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/Mermaid diagrams.md              | Markdown           |         27 |          0 |          8 |         35 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/Obsidian compatibility.md        | Markdown           |         11 |          0 |          7 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/OxHugo compatibility.md          | Markdown           |         22 |          0 |          8 |         30 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/RSS Feed.md                      | Markdown           |          3 |          0 |          3 |          6 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/Roam Research compatibility.md   | Markdown           |         22 |          0 |          7 |         29 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/SPA Routing.md                   | Markdown           |          4 |          0 |          4 |          8 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/backlinks.md                     | Markdown           |         12 |          0 |          4 |         16 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/breadcrumbs.md                   | Markdown           |         26 |          0 |         11 |         37 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/callouts.md                      | Markdown           |         67 |          0 |         30 |         97 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/comments.md                      | Markdown           |         95 |          0 |         33 |        128 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/darkmode.md                      | Markdown           |         18 |          0 |          6 |         24 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/explorer.md                      | Markdown           |        256 |          0 |         64 |        320 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/folder and tag listings.md       | Markdown           |         19 |          0 |         15 |         34 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/full-text search.md              | Markdown           |         20 |          0 |         11 |         31 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/graph view.md                    | Markdown           |         51 |          0 |         13 |         64 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/i18n.md                          | Markdown           |         14 |          0 |          5 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/index.md                         | Markdown           |          3 |          0 |          1 |          4 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/popover previews.md              | Markdown           |         11 |          0 |          7 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/private pages.md                 | Markdown           |         24 |          0 |         12 |         36 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/recent notes.md                  | Markdown           |         14 |          0 |          4 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/social images.md                 | Markdown           |        352 |          0 |         50 |        402 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/syntax highlighting.md           | Markdown           |        102 |          0 |         42 |        144 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/table of contents.md             | Markdown           |         12 |          0 |          7 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/upcoming features.md             | Markdown           |         10 |          0 |          3 |         13 |
+| /Users/levi/Documents/Code/createwithlevi/docs/features/wikilinks.md                     | Markdown           |         17 |          0 |          8 |         25 |
+| /Users/levi/Documents/Code/createwithlevi/docs/hosting.md                                | Markdown           |        219 |          0 |         70 |        289 |
+| /Users/levi/Documents/Code/createwithlevi/docs/index.md                                  | Markdown           |         32 |          0 |         15 |         47 |
+| /Users/levi/Documents/Code/createwithlevi/docs/layout.md                                 | Markdown           |         47 |          0 |         18 |         65 |
+| /Users/levi/Documents/Code/createwithlevi/docs/migrating from Quartz 3.md                | Markdown           |         31 |          0 |         11 |         42 |
+| /Users/levi/Documents/Code/createwithlevi/docs/philosophy.md                             | Markdown           |         28 |          0 |         20 |         48 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/AliasRedirects.md                 | Markdown           |         26 |          0 |         12 |         38 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/Assets.md                         | Markdown           |         14 |          0 |          7 |         21 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/CNAME.md                          | Markdown           |         15 |          0 |          8 |         23 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/ComponentResources.md             | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/ContentIndex.md                   | Markdown           |         19 |          0 |          8 |         27 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/ContentPage.md                    | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/CrawlLinks.md                     | Markdown           |         23 |          0 |          8 |         31 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/CreatedModifiedDate.md            | Markdown           |         18 |          0 |          8 |         26 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/Description.md                    | Markdown           |         16 |          0 |          8 |         24 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/ExplicitPublish.md                | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/FolderPage.md                     | Markdown           |         16 |          0 |          9 |         25 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/Frontmatter.md                    | Markdown           |         17 |          0 |          8 |         25 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/GitHubFlavoredMarkdown.md         | Markdown           |         16 |          0 |          8 |         24 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/HardLineBreaks.md                 | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/Latex.md                          | Markdown           |         18 |          0 |          8 |         26 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/NotFoundPage.md                   | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/ObsidianFlavoredMarkdown.md       | Markdown           |         27 |          0 |          8 |         35 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/OxHugoFlavoredMarkdown.md         | Markdown           |         22 |          0 |          8 |         30 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/RemoveDrafts.md                   | Markdown           |         13 |          0 |          6 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/RoamFlavoredMarkdown.md           | Markdown           |         20 |          0 |          7 |         27 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/Static.md                         | Markdown           |         15 |          0 |          7 |         22 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/SyntaxHighlighting.md             | Markdown           |         16 |          0 |          8 |         24 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/TableOfContents.md                | Markdown           |         19 |          0 |          8 |         27 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/TagPage.md                        | Markdown           |         15 |          0 |          8 |         23 |
+| /Users/levi/Documents/Code/createwithlevi/docs/plugins/index.md                          | Markdown           |          3 |          0 |          1 |          4 |
+| /Users/levi/Documents/Code/createwithlevi/docs/setting up your GitHub repository.md      | Markdown           |         34 |          0 |         15 |         49 |
+| /Users/levi/Documents/Code/createwithlevi/docs/showcase.md                               | Markdown           |         33 |          0 |          4 |         37 |
+| /Users/levi/Documents/Code/createwithlevi/docs/tags/component.md                         | Markdown           |          4 |          0 |          2 |          6 |
+| /Users/levi/Documents/Code/createwithlevi/docs/tags/plugin.md                            | Markdown           |          3 |          0 |          1 |          4 |
+| /Users/levi/Documents/Code/createwithlevi/docs/upgrading.md                              | Markdown           |         13 |          0 |          7 |         20 |
+| /Users/levi/Documents/Code/createwithlevi/globals.d.ts                                   | TypeScript         |         17 |          0 |          1 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/images.py                                      | Python             |         40 |          9 |         12 |         61 |
+| /Users/levi/Documents/Code/createwithlevi/index.d.ts                                     | TypeScript         |          9 |          1 |          3 |         13 |
+| /Users/levi/Documents/Code/createwithlevi/package-lock.json                              | JSON               |      8,134 |          0 |          1 |      8,135 |
+| /Users/levi/Documents/Code/createwithlevi/package.json                                   | JSON               |        115 |          0 |          1 |        116 |
+| /Users/levi/Documents/Code/createwithlevi/quartz.config.ts                               | TypeScript         |         88 |          5 |          3 |         96 |
+| /Users/levi/Documents/Code/createwithlevi/quartz.layout.ts                               | TypeScript         |         44 |          3 |          4 |         51 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/bootstrap-cli.mjs                       | JavaScript         |         40 |          0 |          2 |         42 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/bootstrap-worker.mjs                    | JavaScript         |          8 |          0 |          1 |          9 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/build.ts                                | TypeScript         |        317 |         39 |         67 |        423 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/cfg.ts                                  | TypeScript         |         73 |         19 |          6 |         98 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/cli/args.js                             | JavaScript         |        105 |          0 |          4 |        109 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/cli/constants.js                        | JavaScript         |         11 |          3 |          2 |         16 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/cli/handlers.js                         | JavaScript         |        471 |         56 |         50 |        577 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/cli/helpers.js                          | JavaScript         |         49 |          0 |          6 |         55 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/ArticleTitle.tsx             | TypeScript JSX     |         16 |          0 |          4 |         20 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Backlinks.tsx                | TypeScript JSX     |         46 |          0 |          7 |         53 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Body.tsx                     | TypeScript JSX     |          9 |          1 |          4 |         14 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Breadcrumbs.tsx              | TypeScript JSX     |         94 |         27 |         19 |        140 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Comments.tsx                 | TypeScript JSX     |         52 |          2 |          7 |         61 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/ContentMeta.tsx              | TypeScript JSX     |         43 |          5 |         11 |         59 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Darkmode.tsx                 | TypeScript JSX     |         44 |          3 |          4 |         51 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/DarkmodeLanguageGroup.tsx    | TypeScript JSX     |         34 |          3 |         10 |         47 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Date.tsx                     | TypeScript JSX     |         26 |          0 |          6 |         32 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/DesktopOnly.tsx              | TypeScript JSX     |         16 |          0 |          3 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Explorer.tsx                 | TypeScript JSX     |        105 |         12 |         12 |        129 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/ExplorerNode.tsx             | TypeScript JSX     |        182 |         34 |         27 |        243 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Footer.tsx                   | TypeScript JSX     |         29 |          0 |          4 |         33 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Graph.tsx                    | TypeScript JSX     |         99 |          1 |          7 |        107 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Head.tsx                     | TypeScript JSX     |        159 |         23 |         28 |        210 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Header.tsx                   | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/LanguageSwitcher.tsx         | TypeScript JSX     |         32 |          0 |          4 |         36 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/MobileOnly.tsx               | TypeScript JSX     |         16 |          0 |          3 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/PageList.tsx                 | TypeScript JSX     |         76 |          3 |          9 |         88 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/PageTitle.tsx                | TypeScript JSX     |         30 |          0 |          4 |         34 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/RecentNotes.tsx              | TypeScript JSX     |         88 |          0 |          6 |         94 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Search.tsx                   | TypeScript JSX     |         47 |          1 |          6 |         54 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/Spacer.tsx                   | TypeScript JSX     |          6 |          0 |          3 |          9 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/TableOfContents.tsx          | TypeScript JSX     |         87 |          1 |          8 |         96 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/TagList.tsx                  | TypeScript JSX     |         54 |          0 |          4 |         58 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/index.ts                     | TypeScript         |         50 |          0 |          3 |         53 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/pages/404.tsx                | TypeScript JSX     |         14 |          1 |          4 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/pages/Content.tsx            | TypeScript JSX     |          9 |          0 |          3 |         12 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/pages/FolderContent.tsx      | TypeScript JSX     |         90 |          3 |         15 |        108 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/pages/TagContent.tsx         | TypeScript JSX     |        115 |          0 |         13 |        128 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/renderPage.tsx               | TypeScript JSX     |        248 |         13 |         20 |        281 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/callout.inline.ts    | TypeScript         |         36 |          1 |          8 |         45 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/checkbox.inline.ts   | TypeScript         |         19 |          0 |          5 |         24 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/clipboard.inline.ts  | TypeScript         |         36 |          0 |          2 |         38 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/comments.inline.ts   | TypeScript         |         81 |          0 |         11 |         92 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/darkmode.inline.ts   | TypeScript         |         32 |          2 |          5 |         39 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/explorer.inline.ts   | TypeScript         |        105 |         14 |         17 |        136 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/graph.inline.ts      | TypeScript         |        511 |         12 |         79 |        602 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/mermaid.inline.ts    | TypeScript         |        189 |         13 |         47 |        249 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/popover.inline.ts    | TypeScript         |         90 |          3 |         17 |        110 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/search.inline.ts     | TypeScript         |        417 |         22 |         55 |        494 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/spa.inline.ts        | TypeScript         |        166 |          9 |         29 |        204 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/toc.inline.ts        | TypeScript         |         42 |          1 |          5 |         48 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/scripts/util.ts              | TypeScript         |         33 |          7 |          6 |         46 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/backlinks.scss        | SCSS               |         27 |         12 |          6 |         45 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/breadcrumbs.scss      | SCSS               |         21 |          0 |          2 |         23 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/clipboard.scss        | SCSS               |         32 |          0 |          5 |         37 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/contentMeta.scss      | SCSS               |         12 |          0 |          3 |         15 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/darkmode.scss         | SCSS               |         41 |          0 |          6 |         47 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/explorer.scss         | SCSS               |        144 |         14 |         24 |        182 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/footer.scss           | SCSS               |         14 |          0 |          2 |         16 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/graph.scss            | SCSS               |         66 |          0 |          8 |         74 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/languageSwitcher.scss | SCSS               |         27 |          0 |          7 |         34 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/legacyToc.scss        | SCSS               |         23 |          0 |          5 |         28 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/listPage.scss         | SCSS               |         31 |          1 |          9 |         41 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/mermaid.inline.scss   | SCSS               |        144 |          1 |         19 |        164 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/popover.scss          | SCSS               |         73 |          0 |         11 |         84 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/recentNotes.scss      | SCSS               |         21 |          0 |          4 |         25 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/search.scss           | SCSS               |        199 |          1 |         35 |        235 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/styles/toc.scss              | SCSS               |         81 |          0 |         13 |         94 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/components/types.ts                     | TypeScript         |         26 |          0 |          4 |         30 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/depgraph.test.ts                        | TypeScript         |         89 |         11 |         19 |        119 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/depgraph.ts                             | TypeScript         |        156 |         32 |         41 |        229 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/index.ts                           | TypeScript         |         74 |          0 |          3 |         77 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ar-SA.ts                   | TypeScript         |         88 |          0 |          2 |         90 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ca-ES.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/cs-CZ.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/de-DE.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/definition.ts              | TypeScript         |         82 |          0 |          3 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/en-GB.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/en-US.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/es-ES.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/fa-IR.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/fr-FR.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/hu-HU.ts                   | TypeScript         |         81 |          0 |          2 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/it-IT.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ja-JP.ts                   | TypeScript         |         81 |          0 |          2 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ko-KR.ts                   | TypeScript         |         81 |          0 |          2 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/nl-NL.ts                   | TypeScript         |         85 |          0 |          2 |         87 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/pl-PL.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/pt-BR.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ro-RO.ts                   | TypeScript         |         84 |          0 |          2 |         86 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/ru-RU.ts                   | TypeScript         |         93 |          0 |          4 |         97 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/tr-TR.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/uk-UA.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/vi-VN.ts                   | TypeScript         |         83 |          0 |          2 |         85 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/zh-CN.ts                   | TypeScript         |         81 |          0 |          2 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/i18n/locales/zh-TW.ts                   | TypeScript         |         81 |          0 |          2 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/404.tsx                | TypeScript JSX     |         63 |          0 |          6 |         69 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/aliases.ts             | TypeScript         |         70 |          2 |         10 |         82 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/assets.ts              | TypeScript         |         48 |          1 |         10 |         59 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/cname.ts               | TypeScript         |         31 |          0 |          3 |         34 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/componentResources.ts  | TypeScript         |        247 |         15 |         29 |        291 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/contentIndex.ts        | TypeScript         |        164 |          3 |         19 |        186 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/contentPage.tsx        | TypeScript JSX     |        118 |          6 |         19 |        143 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/folderPage.tsx         | TypeScript JSX     |        128 |          3 |         15 |        146 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/helpers.ts             | TypeScript         |         17 |          0 |          3 |         20 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/index.ts               | TypeScript         |         10 |          0 |          1 |         11 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/static.ts              | TypeScript         |         32 |          0 |          4 |         36 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/emitters/tagPage.tsx            | TypeScript JSX     |        126 |          2 |         15 |        143 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/draft.ts                | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/explicit.ts             | TypeScript         |          7 |          0 |          2 |          9 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/filters/index.ts                | TypeScript         |          2 |          0 |          1 |          3 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/index.ts                        | TypeScript         |         42 |          3 |          8 |         53 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/citations.ts       | TypeScript         |         45 |          3 |          7 |         55 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/description.ts     | TypeScript         |         73 |          0 |         10 |         83 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/frontmatter.ts     | TypeScript         |        101 |          3 |         16 |        120 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/gfm.ts             | TypeScript         |         75 |          0 |          4 |         79 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/index.ts           | TypeScript         |         13 |          0 |          1 |         14 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/lastmod.ts         | TypeScript         |         83 |          3 |         10 |         96 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/latex.ts           | TypeScript         |         61 |          3 |          4 |         68 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/linebreaks.ts      | TypeScript         |         10 |          0 |          2 |         12 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/links.ts           | TypeScript         |        145 |         11 |         17 |        173 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/ofm.ts             | TypeScript         |        727 |         40 |         66 |        833 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/oxhugofm.ts        | TypeScript         |         76 |         20 |         11 |        107 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/roam.ts            | TypeScript         |        197 |          5 |         23 |        225 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/syntax.ts          | TypeScript         |         26 |          0 |          6 |         32 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/transformers/toc.ts             | TypeScript         |         67 |          0 |          7 |         74 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/types.ts                        | TypeScript         |         43 |          0 |          5 |         48 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/plugins/vfile.ts                        | TypeScript         |         12 |          0 |          3 |         15 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/processors/emit.ts                      | TypeScript         |         28 |          0 |          6 |         34 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/processors/filter.ts                    | TypeScript         |         20 |          0 |          5 |         25 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/processors/parse.ts                     | TypeScript         |        165 |         10 |         26 |        201 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/static/giscus/dark.css                  | CSS                |         90 |          5 |          5 |        100 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/static/giscus/light.css                 | CSS                |         90 |          5 |          5 |        100 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/styles/base.scss                        | SCSS               |        511 |         15 |         77 |        603 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/styles/callouts.scss                    | SCSS               |        137 |          1 |         25 |        163 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/styles/custom.scss                      | SCSS               |         70 |          7 |         18 |         95 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/styles/syntax.scss                      | SCSS               |         14 |          0 |          4 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/styles/variables.scss                   | SCSS               |         46 |          7 |          4 |         57 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/ctx.ts                             | TypeScript         |         19 |          0 |          3 |         22 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/escape.ts                          | TypeScript         |         16 |          0 |          2 |         18 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/glob.ts                            | TypeScript         |         20 |          0 |          3 |         23 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/jsx.tsx                            | TypeScript JSX     |         25 |          0 |          3 |         28 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/lang.ts                            | TypeScript         |         12 |          0 |          2 |         14 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/log.ts                             | TypeScript         |         25 |          0 |          4 |         29 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/og.tsx                             | TypeScript JSX     |        121 |         67 |         15 |        203 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/path.test.ts                       | TypeScript         |        273 |          3 |         30 |        306 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/path.ts                            | TypeScript         |        240 |         17 |         55 |        312 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/perf.ts                            | TypeScript         |         15 |          0 |          5 |         20 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/resources.tsx                      | TypeScript JSX     |         60 |          0 |          6 |         66 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/sourcemap.ts                       | TypeScript         |         15 |          2 |          2 |         19 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/theme.ts                           | TypeScript         |         63 |          0 |         10 |         73 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/util/trace.ts                           | TypeScript         |         35 |          2 |          7 |         44 |
+| /Users/levi/Documents/Code/createwithlevi/quartz/worker.ts                               | TypeScript         |         41 |          5 |          3 |         49 |
+| /Users/levi/Documents/Code/createwithlevi/sync_blog.sh                                   | Shell Script       |         25 |          6 |         10 |         41 |
+| /Users/levi/Documents/Code/createwithlevi/tsconfig.json                                  | JSON with Comments |         20 |          0 |          1 |         21 |
+| Total                                                                                    |                    |     25,217 |        699 |      2,857 |     28,773 |
++------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

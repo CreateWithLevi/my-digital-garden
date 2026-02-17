@@ -1,11 +1,8 @@
 ---
 title: CreateWithLevi 中文版
 aliases:
-  - CreateWithLevi 中文版
-tags:
-  - "#note/develop🍃"
+  - CreateWithLevi 首頁
 ---
-
 ## CreateWithLevi 的願景
 
 - 讓我的想法得以成長並影響他人的平台
@@ -33,9 +30,9 @@ tags:
 
 - 我正在建立我的線上形象，這個網站可能會成為創意中心
 - 我正在開發軟體產品，自從 AI 出現後，這變得非常有趣
-- 我正在準備和太太一起移居國外，這是我的[[Live Abroad MOC|移居海外筆記]]
-- [[zh/Digital Garden Ideas|數位花園方向]]
-- [[zh/VS Code Functions|VS Code 功能]]
+- 我正在準備和太太一起移居國外，這是我的[[國外生活相關|移居海外筆記]]
+- [[知識/筆記/Public/zh/Digital Garden Ideas|數位花園方向]]
+- [[知識/筆記/Public/zh/VS Code Functions|VS Code 功能]]
 
 ## 里程碑
 
@@ -44,8 +41,15 @@ tags:
 - M:: 嘗試創造與分享
   - on:: 2025-01-20
 
-[[Library]]
+[[知識]]
 [[創造]]
-[[Create with Levi]]
-[[經營線上簡歷]]
-[[Efforts]]
+[[建立線上履歷]]
+[[努力]]
+
+- **西**：這個點子有什麼相似的想法？
+	- [[數位花園]] 
+	- [[以前的CreatewithLevi]]
+- **東**：這個點子有什麼相反的想法？
+	- 
+- **北**：這個點子源自哪個主題或問題？
+- **南**：這個點子會引領到什麼方向？（所以呢？）

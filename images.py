@@ -3,9 +3,9 @@ import re
 import shutil
 
 # Paths
-base_content_dir = "/Users/levi/Documents/createwithlevi/content/"
-attachments_dir = "/Users/levi/Library/Mobile Documents/iCloud~md~obsidian/Documents/Ideaverse/Atlas/Utilities/Images/"
-quartz_images_dir = "/Users/levi/Documents/createwithlevi/content/images/"
+base_content_dir = "/Users/levi/Documents/CreatewithLevi/createwithlevi/content/"
+attachments_dir = "/Users/levi/Library/Mobile Documents/iCloud~md~obsidian/Documents/Ideaverse/知識/工具/圖片/"
+quartz_images_dir = "/Users/levi/Documents/CreatewithLevi/createwithlevi/content/images/"
 
 def process_markdown_files(directory):
     for filename in os.listdir(directory):
