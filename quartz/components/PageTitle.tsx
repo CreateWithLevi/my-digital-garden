@@ -6,9 +6,14 @@ import { i18n } from "../i18n"
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
+
+  // If on a language path (en/ or zh/), link to that language's homepage
+  const langMatch = fileData.slug!.match(/^(en|zh)\//)
+  const href = langMatch ? baseDir + "/" + langMatch[1] + "/" : baseDir
+
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>{title}</a>
+      <a href={href}>{title}</a>
     </h2>
   )
 }

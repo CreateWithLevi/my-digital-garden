@@ -37,19 +37,26 @@ const defaultOptions = {
   order: ["filter", "map", "sort"],
 } satisfies Options
 
+function getLangPrefix(slug: string): string | null {
+  const match = slug.match(/^(en|zh)\//)
+  return match ? match[1] : null
+}
+
 export default ((userOpts?: Partial<Options>) => {
   // Parse config
   const opts: Options = { ...defaultOptions, ...userOpts }
 
-  // memoized
-  let fileTree: FileNode
-  let jsonTree: string
+  // memoized per language
   let lastBuildId: string = ""
+  const treeCache = new Map<string, { tree: FileNode; json: string }>()
 
-  function constructFileTree(allFiles: QuartzPluginData[]) {
-    // Construct tree from allFiles
-    fileTree = new FileNode("")
-    allFiles.forEach((file) => fileTree.add(file))
+  function constructFileTree(files: QuartzPluginData[], lang: string | null): {
+    tree: FileNode
+    json: string
+  } {
+    // Construct tree from files
+    const tree = new FileNode("")
+    files.forEach((file) => tree.add(file))
 
     // Execute all functions (sort, filter, map) that were provided (if none were provided, only default "sort" is applied)
     if (opts.order) {
@@ -57,19 +64,29 @@ export default ((userOpts?: Partial<Options>) => {
       for (let i = 0; i < opts.order.length; i++) {
         const functionName = opts.order[i]
         if (functionName === "map") {
-          fileTree.map(opts.mapFn)
+          tree.map(opts.mapFn)
         } else if (functionName === "sort") {
-          fileTree.sort(opts.sortFn)
+          tree.sort(opts.sortFn)
         } else if (functionName === "filter") {
-          fileTree.filter(opts.filterFn)
+          tree.filter(opts.filterFn)
         }
+      }
+    }
+
+    // Unwrap language folder so Explorer shows contents directly
+    if (lang) {
+      const langChild = tree.children.find((c) => c.name === lang)
+      if (langChild) {
+        tree.children = langChild.children
       }
     }
 
     // Get all folders of tree. Initialize with collapsed state
     // Stringify to pass json tree as data attribute ([data-tree])
-    const folders = fileTree.getFolderPaths(opts.folderDefaultState === "collapsed")
-    jsonTree = JSON.stringify(folders)
+    const folders = tree.getFolderPaths(opts.folderDefaultState === "collapsed")
+    const json = JSON.stringify(folders)
+
+    return { tree, json }
   }
 
   const Explorer: QuartzComponent = ({
@@ -81,8 +98,18 @@ export default ((userOpts?: Partial<Options>) => {
   }: QuartzComponentProps) => {
     if (ctx.buildId !== lastBuildId) {
       lastBuildId = ctx.buildId
-      constructFileTree(allFiles)
+      treeCache.clear()
     }
+
+    const lang = getLangPrefix(fileData.slug!)
+    const cacheKey = lang ?? "__root__"
+
+    if (!treeCache.has(cacheKey)) {
+      const filtered = lang ? allFiles.filter((f) => f.slug?.startsWith(lang + "/")) : allFiles
+      treeCache.set(cacheKey, constructFileTree(filtered, lang))
+    }
+
+    const { tree: fileTree, json: jsonTree } = treeCache.get(cacheKey)!
 
     return (
       <div class={classNames(displayClass, "explorer")}>
