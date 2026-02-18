@@ -18,6 +18,8 @@ import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
 
+const LANG_PREFIXES = ["en", "zh"]
+
 interface TagPageOptions extends FullPageLayout {
   sort?: (f1: QuartzPluginData, f2: QuartzPluginData) => number
 }
@@ -55,8 +57,11 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
 
       for (const [_tree, file] of content) {
         const sourcePath = file.data.filePath!
+        const slug = file.data.slug!
+        const lang = LANG_PREFIXES.find((l) => slug.startsWith(l + "/"))
+        if (!lang) continue
+
         const tags = (file.data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes)
-        // if the file has at least one tag, it is used in the tag index page
         if (tags.length > 0) {
           tags.push("index")
         }
@@ -64,7 +69,7 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
         for (const tag of tags) {
           graph.addEdge(
             sourcePath,
-            joinSegments(ctx.argv.output, "tags", tag + ".html") as FilePath,
+            joinSegments(ctx.argv.output, lang, "tags", tag + ".html") as FilePath,
           )
         }
       }
@@ -76,65 +81,75 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
 
-      const tags: Set<string> = new Set(
-        allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
-      )
+      // Group files by language
+      for (const lang of LANG_PREFIXES) {
+        const langFiles = allFiles.filter((f) => f.slug?.startsWith(lang + "/"))
+        if (langFiles.length === 0) continue
 
-      // add base tag
-      tags.add("index")
+        const tags: Set<string> = new Set(
+          langFiles
+            .flatMap((data) => data.frontmatter?.tags ?? [])
+            .flatMap(getAllSegmentPrefixes),
+        )
 
-      const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
-        [...tags].map((tag) => {
-          const title =
-            tag === "index"
-              ? i18n(cfg.locale).pages.tagContent.tagIndex
-              : `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
-          return [
-            tag,
-            defaultProcessedContent({
-              slug: joinSegments("tags", tag) as FullSlug,
-              frontmatter: { title, tags: [] },
-            }),
-          ]
-        }),
-      )
+        // add base tag index
+        tags.add("index")
 
-      for (const [tree, file] of content) {
-        const slug = file.data.slug!
-        if (slug.startsWith("tags/")) {
-          const tag = slug.slice("tags/".length)
-          if (tags.has(tag)) {
-            tagDescriptions[tag] = [tree, file]
-            if (file.data.frontmatter?.title === tag) {
-              file.data.frontmatter.title = `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
+        const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
+          [...tags].map((tag) => {
+            const title =
+              tag === "index"
+                ? i18n(cfg.locale).pages.tagContent.tagIndex
+                : `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
+            return [
+              tag,
+              defaultProcessedContent({
+                slug: joinSegments(lang, "tags", tag) as FullSlug,
+                frontmatter: { title, tags: [] },
+              }),
+            ]
+          }),
+        )
+
+        // Check if any content files provide custom tag descriptions
+        for (const [tree, file] of content) {
+          const slug = file.data.slug!
+          const tagPrefix = lang + "/tags/"
+          if (slug.startsWith(tagPrefix)) {
+            const tag = slug.slice(tagPrefix.length)
+            if (tags.has(tag)) {
+              tagDescriptions[tag] = [tree, file]
+              if (file.data.frontmatter?.title === tag) {
+                file.data.frontmatter.title = `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
+              }
             }
           }
         }
-      }
 
-      for (const tag of tags) {
-        const slug = joinSegments("tags", tag) as FullSlug
-        const [tree, file] = tagDescriptions[tag]
-        const externalResources = pageResources(pathToRoot(slug), file.data, resources)
-        const componentData: QuartzComponentProps = {
-          ctx,
-          fileData: file.data,
-          externalResources,
-          cfg,
-          children: [],
-          tree,
-          allFiles,
+        for (const tag of tags) {
+          const slug = joinSegments(lang, "tags", tag) as FullSlug
+          const [tree, file] = tagDescriptions[tag]
+          const externalResources = pageResources(pathToRoot(slug), file.data, resources)
+          const componentData: QuartzComponentProps = {
+            ctx,
+            fileData: file.data,
+            externalResources,
+            cfg,
+            children: [],
+            tree,
+            allFiles: langFiles,
+          }
+
+          const renderedContent = renderPage(cfg, slug, componentData, opts, externalResources)
+          const fp = await write({
+            ctx,
+            content: renderedContent,
+            slug: file.data.slug!,
+            ext: ".html",
+          })
+
+          fps.push(fp)
         }
-
-        const content = renderPage(cfg, slug, componentData, opts, externalResources)
-        const fp = await write({
-          ctx,
-          content,
-          slug: file.data.slug!,
-          ext: ".html",
-        })
-
-        fps.push(fp)
       }
       return fps
     },

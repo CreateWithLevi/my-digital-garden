@@ -23,11 +23,16 @@ export default ((opts?: Partial<TagContentOptions>) => {
     const { tree, fileData, allFiles, cfg } = props
     const slug = fileData.slug
 
-    if (!(slug?.startsWith("tags/") || slug === "tags")) {
+    // Support both "tags/..." and "{lang}/tags/..." slug formats
+    const langMatch = slug?.match(/^(en|zh)\//)
+    const langPrefix = langMatch ? langMatch[1] + "/" : ""
+    const tagSlug = langPrefix ? slug!.slice(langPrefix.length) : slug
+
+    if (!(tagSlug?.startsWith("tags/") || tagSlug === "tags")) {
       throw new Error(`Component "TagContent" tried to render a non-tag page: ${slug}`)
     }
 
-    const tag = simplifySlug(slug.slice("tags/".length) as FullSlug)
+    const tag = simplifySlug(tagSlug.slice("tags/".length) as FullSlug)
     const allPagesWithTag = (tag: string) =>
       allFiles.filter((file) =>
         (file.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes).includes(tag),
@@ -63,7 +68,9 @@ export default ((opts?: Partial<TagContentOptions>) => {
                 allFiles: pages,
               }
 
-              const contentPage = allFiles.filter((file) => file.slug === `tags/${tag}`).at(0)
+              const contentPage = allFiles
+                .filter((file) => file.slug === `${langPrefix}tags/${tag}`)
+                .at(0)
 
               const root = contentPage?.htmlAst
               const content =

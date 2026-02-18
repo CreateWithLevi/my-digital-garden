@@ -1,4 +1,4 @@
-import { FullSlug, resolveRelative } from "../util/path"
+import { FullSlug, resolveRelative, slugTag } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
@@ -37,6 +37,10 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
     list = list.slice(0, limit)
   }
 
+  // Detect language prefix for language-specific tag links
+  const langMatch = fileData.slug!.match(/^(en|zh)\//)
+  const langSegment = langMatch ? langMatch[1] + "/" : ""
+
   return (
     <ul class="section-ul">
       {list.map((page) => {
@@ -55,13 +59,16 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                     {title}
                   </a>
                 </h3>
+                {page.frontmatter?.description && (
+                  <p class="page-description">{page.frontmatter.description}</p>
+                )}
               </div>
               <ul class="tags">
                 {tags.map((tag) => (
                   <li>
                     <a
                       class="internal tag-link"
-                      href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                      href={resolveRelative(fileData.slug!, `${langSegment}tags/${slugTag(tag)}` as FullSlug)}
                     >
                       {tag}
                     </a>
@@ -83,5 +90,11 @@ PageList.css = `
 
 .section > .tags {
   margin: 0;
+}
+
+.page-description {
+  margin: 0.3rem 0 0 0;
+  font-style: italic;
+  font-size: 0.95rem;
 }
 `

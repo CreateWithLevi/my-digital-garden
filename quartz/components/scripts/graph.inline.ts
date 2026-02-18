@@ -89,6 +89,11 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     focusOnHover,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
+  // Detect language prefix from current slug for language-specific tag paths
+  const langMatch = slug.match(/^(en|zh)\//)
+  const langPrefix = langMatch ? langMatch[1] + "/" : ""
+  const tagPathPrefix = langPrefix + "tags/"
+
   const data: Map<SimpleSlug, ContentDetails> = new Map(
     Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
       simplifySlug(k as FullSlug),
@@ -112,7 +117,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     if (showTags) {
       const localTags = details.tags
         .filter((tag) => !removeTags.includes(tag))
-        .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
+        .map((tag) => simplifySlug((tagPathPrefix + tag) as FullSlug))
 
       tags.push(...localTags.filter((tag) => !tags.includes(tag)))
 
@@ -143,8 +148,11 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     if (showTags) tags.forEach((tag) => neighbourhood.add(tag))
   }
 
+  const isTagNode = (id: string) => id.startsWith(tagPathPrefix)
+  const tagName = (id: string) => id.substring(tagPathPrefix.length)
+
   const nodes = [...neighbourhood].map((url) => {
-    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    const text = isTagNode(url) ? "#" + tagName(url) : (data.get(url)?.title ?? url)
     return {
       id: url,
       text,
@@ -195,7 +203,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (visited.has(d.id) || isTagNode(d.id)) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]
@@ -387,7 +395,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     label.scale.set(1 / scale)
 
     let oldLabelOpacity = 0
-    const isTagNode = nodeId.startsWith("tags/")
+    const isTag = isTagNode(nodeId)
     const gfx = new Graphics({
       interactive: true,
       label: nodeId,
@@ -396,8 +404,8 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       cursor: "pointer",
     })
       .circle(0, 0, nodeRadius(n))
-      .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
-      .stroke({ width: isTagNode ? 2 : 0, color: color(n) })
+      .fill({ color: isTag ? computedStyleMap["--light"] : color(n) })
+      .stroke({ width: isTag ? 2 : 0, color: color(n) })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
         oldLabelOpacity = label.alpha
