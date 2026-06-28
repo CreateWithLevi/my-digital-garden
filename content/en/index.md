@@ -19,3 +19,6 @@ Unlike a traditional blog, content here grows and evolves over time. What you se
 - Exploring what matters in the age of AI — when expertise is no longer scarce, what's truly important
 
 ## What I've Been Thinking About
+
+- [[en/pkm-attention-status|How I Redesigned the Status System in My PKM]]
+- [[en/ai-era-perspective|When Knowledge Is No Longer Scarce, What Remains]]

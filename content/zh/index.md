@@ -19,3 +19,6 @@ aliases:
 - 探索 AI 時代下人的定位 — 當專業不再稀缺，什麼才是真正重要的
 
 ## 最近在想的事
+
+- [[zh/pkm-attention-status|我如何重新設計 PKM 的 status 系統]]
+- [[zh/ai-era-perspective|當知識不再稀缺，剩下的是什麼？]]
