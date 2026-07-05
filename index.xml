@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>CreateWithLevi</title>
+      <link>https://createwithlevi.com</link>
+      <description>Last 10 notes on CreateWithLevi</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>CreateWithLevi</title>
+    <link>https://createwithlevi.com/zh/</link>
+    <guid>https://createwithlevi.com/zh/</guid>
+    <description>歡迎來到我的數位花園 這裡是我公開思考的地方。 我是 Levi，一個住在柏林的軟體工程師。這個數位花園記錄了我在學習、創作和生活中逐漸形成的想法 — 它們不一定完整，但都是真實的。 和傳統部落格不同，這裡的內容會持續成長和更新。你看到的不是「完成品」，而是我目前的理解。歡迎一起探索。 我在做什麼 經營這個數位花園 — ...</description>
+    <pubDate>Sun, 05 Jul 2026 14:35:20 GMT</pubDate>
+  </item><item>
+    <title>AI 協作學習實驗室</title>
+    <link>https://createwithlevi.com/zh/ai-collaboration-learning-lab</link>
+    <guid>https://createwithlevi.com/zh/ai-collaboration-learning-lab</guid>
+    <description>一組用來練習把輸入轉成具體成果，並把具體成果包裝成影響力實驗的互動 HTML lessons。.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>從輸入到具體成果，是一種可以訓練的能力</title>
+    <link>https://createwithlevi.com/zh/input-to-concrete-output</link>
+    <guid>https://createwithlevi.com/zh/input-to-concrete-output</guid>
+    <description>我以前常把 input 當成需要吸收和收藏的東西。後來才發現，看到 input 時就思考它能產出什麼具體成果，本身是一種可以訓練的能力。.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Lesson 0001 — 具體成果迴圈</title>
+    <link>https://createwithlevi.com/zh/lab/lesson-0001</link>
+    <guid>https://createwithlevi.com/zh/lab/lesson-0001</guid>
+    <description>把模糊 input 轉成下一個最小具體成果.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Lesson 0002 — 先定義輸出，再和 AI 協作</title>
+    <link>https://createwithlevi.com/zh/lab/lesson-0002</link>
+    <guid>https://createwithlevi.com/zh/lab/lesson-0002</guid>
+    <description>用 output-first prompt 讓 AI 產出可修改版本.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Lesson 0003 — 把具體成果包裝成影響力實驗</title>
+    <link>https://createwithlevi.com/zh/lab/lesson-0003</link>
+    <guid>https://createwithlevi.com/zh/lab/lesson-0003</guid>
+    <description>選平台、分發方式、觀察反饋與產品想像.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Reference — 具體成果迴圈</title>
+    <link>https://createwithlevi.com/zh/lab/reference-artifact-loop</link>
+    <guid>https://createwithlevi.com/zh/lab/reference-artifact-loop</guid>
+    <description>把學習從「讀更多」轉成「做出一個可以回顧、展示、修正的東西」.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Reference — 具體成果影響力地圖</title>
+    <link>https://createwithlevi.com/zh/lab/reference-output-impact-map</link>
+    <guid>https://createwithlevi.com/zh/lab/reference-output-impact-map</guid>
+    <description>把具體成果從輸出推進到平台、分發、反饋與產品想像.</description>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>AI 時代，我真正適合的角色不是一個職稱</title>
+    <link>https://createwithlevi.com/zh/ai-era-role-positioning</link>
+    <guid>https://createwithlevi.com/zh/ai-era-role-positioning</guid>
+    <description>在 AI 時代，我不需要急著選一個完美職稱，而是把工程、創作、接案、產品和工作整合成一個能持續產出有價值具體成果的迴圈。.</description>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>CreateWithLevi</title>
+    <link>https://createwithlevi.com/en/</link>
+    <guid>https://createwithlevi.com/en/</guid>
+    <description>Welcome to My Digital Garden This is where I think out loud. I’m Levi, a software engineer based in Berlin. This digital garden captures the ideas I’m forming through learning, creating, and living — they may not be complete, but they’re real.</description>
+    <pubDate>Sun, 28 Jun 2026 13:42:07 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

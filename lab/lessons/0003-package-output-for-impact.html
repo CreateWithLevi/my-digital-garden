@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 0003 — 把具體成果包裝成影響力實驗</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+<main><article>
+  <p class="pill">Lesson 0003</p>
+  <h1>把具體成果包裝成影響力實驗</h1>
+  <p class="lede">這堂課不練「再多做一個成果」，而是練習把一個已經存在的成果，放到合適的平台，設計一個最小發布與反饋實驗。</p>
+
+  <div class="callout">
+    <strong>今天的勝利條件：</strong>選一個具體成果，決定平台、分發方式、期待反饋，以及它未來可能變成的 product / offer。
+  </div>
+
+  <h2>五步驟</h2>
+  <div class="grid">
+    <div class="card"><strong>1. Pick</strong><br>選一個已完成或 70 分的成果。</div>
+    <div class="card"><strong>2. Audience</strong><br>它是給誰看的？past self、工程師、創作者、客戶？</div>
+    <div class="card"><strong>3. Package</strong><br>放 Digital Garden、LinkedIn、repo、newsletter 還是 service page？</div>
+    <div class="card"><strong>4. Distribute</strong><br>要怎麼讓人看到？短文、留言、repo、newsletter、DM？</div>
+    <div class="card"><strong>5. Learn</strong><br>發布後要觀察什麼？保存、留言、詢問、訂閱、star？</div>
+  </div>
+
+  <h2>練習 1：選平台</h2>
+  <div class="exercise" data-answer="garden">
+    <strong>情境 A：</strong>你有一篇還會持續修改的長文，想保留 canonical version。<br><br>
+    <button data-choice="garden">Digital Garden</button>
+    <button data-choice="chat">一般 Chat</button>
+    <button data-choice="invoice">Invoice</button>
+    <div class="feedback"></div>
+  </div>
+  <div class="exercise" data-answer="github">
+    <strong>情境 B：</strong>你做了一組 HTML lesson / prompt / skill，想讓別人可以 fork 或參考。<br><br>
+    <button data-choice="substack">Substack</button>
+    <button data-choice="github">GitHub repo</button>
+    <button data-choice="calendar">Calendar</button>
+    <div class="feedback"></div>
+  </div>
+  <div class="exercise" data-answer="linkedin">
+    <strong>情境 C：</strong>你想測試一個職涯 / AI 協作觀點是否能引起專業圈反饋。<br><br>
+    <button data-choice="linkedin">LinkedIn</button>
+    <button data-choice="archive">Archive</button>
+    <button data-choice="local">Local file</button>
+    <div class="feedback"></div>
+  </div>
+
+  <h2>練習 2：設計最小發布實驗</h2>
+  <div class="answer-box">
+    <label><strong>1. 我要發布的具體成果</strong></label>
+    <textarea id="output" placeholder="例如：Lesson 0002 — 先定義輸出，再和 AI 協作"></textarea>
+    <label><strong>2. 目標讀者</strong></label>
+    <textarea id="audience" placeholder="例如：同樣用 AI + Obsidian 工作、但不知道如何把 input 轉 output 的創作者 / 工程師"></textarea>
+    <label><strong>3. 包裝平台</strong></label>
+    <textarea id="platform" placeholder="例如：Digital Garden Lab + GitHub repo"></textarea>
+    <label><strong>4. 分發方式</strong></label>
+    <textarea id="distribution" placeholder="例如：LinkedIn 短文，說明我如何用 output-first prompt 管理 AI 協作"></textarea>
+    <label><strong>5. 我要觀察的反饋</strong></label>
+    <textarea id="feedback" placeholder="例如：是否有人保存、留言、詢問 workflow、想看 repo"></textarea>
+    <button id="make" class="secondary">產生發布實驗 brief</button>
+    <div id="result" class="card small"></div>
+  </div>
+
+  <h2>下一步</h2>
+  <p>把產生的 brief 貼回 [[CreateWithLevi]] 或對應 project，並決定它是 L1 Public Draft、L2 Distributed，還是 L3 Packaged。</p>
+  <p>速查：<a href="../reference/output-impact-map.html">具體成果影響力地圖 reference</a></p>
+
+  <footer>完成後，回到 Obsidian 更新 [[具體成果影響力地圖]] 或 [[CreateWithLevi]]。</footer>
+</article></main>
+<script>
+  document.querySelectorAll('.exercise').forEach(ex => {
+    ex.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ok = btn.dataset.choice === ex.dataset.answer;
+        const fb = ex.querySelector('.feedback');
+        fb.textContent = ok ? '對：這個平台和成果的用途一致。' : '再想一次：選最能讓成果被看見、被回饋、被重用的平台。';
+        fb.className = 'feedback ' + (ok ? 'good' : 'warn');
+      });
+    });
+  });
+  document.getElementById('make').addEventListener('click', () => {
+    const get = id => document.getElementById(id).value.trim() || '（待補）';
+    document.getElementById('result').textContent = `發布實驗 brief\n\n成果：${get('output')}\n目標讀者：${get('audience')}\n包裝平台：${get('platform')}\n分發方式：${get('distribution')}\n觀察反饋：${get('feedback')}\n\n最小下一步：先發布 70 分版本，再根據反饋修改，而不是等到完整產品才公開。`;
+  });
+</script>
+</body>
+</html>

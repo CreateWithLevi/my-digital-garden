@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>我如何重新設計 PKM 的 status 系統</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="CreateWithLevi"/><meta property="og:title" content="我如何重新設計 PKM 的 status 系統"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="我如何重新設計 PKM 的 status 系統"/><meta name="twitter:description" content="我把 PKM 裡的 status 重新定義為 Attention Status：不是追蹤內容完整度，而是追蹤一個容器現在需要哪一種注意力。"/><meta property="og:description" content="我把 PKM 裡的 status 重新定義為 Attention Status：不是追蹤內容完整度，而是追蹤一個容器現在需要哪一種注意力。"/><meta property="og:image:type" content="image/webp"/><meta property="og:image:alt" content="我把 PKM 裡的 status 重新定義為 Attention Status：不是追蹤內容完整度，而是追蹤一個容器現在需要哪一種注意力。"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:url" content="https://createwithlevi.com/static/og-image.png"/><meta name="twitter:image" content="https://createwithlevi.com/static/og-image.png"/><meta property="og:image" content="https://createwithlevi.com/static/og-image.png"/><meta property="twitter:domain" content="createwithlevi.com"/><meta property="og:url" content="https://createwithlevi.com/zh/pkm-attention-status"/><meta property="twitter:url" content="https://createwithlevi.com/zh/pkm-attention-status"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="我把 PKM 裡的 status 重新定義為 Attention Status：不是追蹤內容完整度，而是追蹤一個容器現在需要哪一種注意力。"/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="zh/pkm-attention-status"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../zh/">CreateWithLevi</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode-language-group"><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="language-switcher"><button id="language-button"><div class="current-language-zh">中</div><div class="current-language-en">EN</div></button></div></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;lab&quot;,&quot;collapsed&quot;:true}]" aria-controls="explorer-content" aria-expanded="false"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="lab"><button class="folder-button"><span class="folder-title">lab</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="lab"><li><a href="../zh/lab/lesson-0001" data-for="zh/lab/lesson-0001">Lesson 0001 — 具體成果迴圈</a></li><li><a href="../zh/lab/lesson-0002" data-for="zh/lab/lesson-0002">Lesson 0002 — 先定義輸出，再和 AI 協作</a></li><li><a href="../zh/lab/lesson-0003" data-for="zh/lab/lesson-0003">Lesson 0003 — 把具體成果包裝成影響力實驗</a></li><li><a href="../zh/lab/reference-output-impact-map" data-for="zh/lab/reference-output-impact-map">Reference — 具體成果影響力地圖</a></li><li><a href="../zh/lab/reference-artifact-loop" data-for="zh/lab/reference-artifact-loop">Reference — 具體成果迴圈</a></li></ul></div></li><li><a href="../zh/ai-collaboration-learning-lab" data-for="zh/ai-collaboration-learning-lab">AI 協作學習實驗室</a></li><li><a href="../zh/ai-era-role-positioning" data-for="zh/ai-era-role-positioning">AI 時代，我真正適合的角色不是一個職稱</a></li><li><a href="../zh/input-to-concrete-output" data-for="zh/input-to-concrete-output">從輸入到具體成果，是一種可以訓練的能力</a></li><li><a href="../zh/pkm-attention-status" data-for="zh/pkm-attention-status">我如何重新設計 PKM 的 status 系統</a></li><li><a href="../zh/ai-era-perspective" data-for="zh/ai-era-perspective">當知識不再稀缺，剩下的是什麼？</a></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../zh/">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>我如何重新設計 PKM 的 status 系統</a></div></nav><div class="article-title-wrapper"><h1 class="article-title">我如何重新設計 PKM 的 status 系統</h1><p class="article-description">我把 PKM 裡的 status 重新定義為 Attention Status：不是追蹤內容完整度，而是追蹤一個容器現在需要哪一種注意力。</p></div><p show-comma="true" class="content-meta"><time datetime="2026-06-28T00:00:00.000Z">Jun 28, 2026</time><span>10 min read</span></p><ul class="tags"><li><a href="../zh/tags/PKM" class="internal tag-link">PKM</a></li><li><a href="../zh/tags/Obsidian" class="internal tag-link">Obsidian</a></li><li><a href="../zh/tags/GTD" class="internal tag-link">GTD</a></li><li><a href="../zh/tags/AI" class="internal tag-link">AI</a></li></ul></div></div><article class="popover-hint"><blockquote>
+<p>English version: <a href="../en/pkm-attention-status" class="internal alias" data-slug="en/pkm-attention-status">How I Redesigned the Status System in My PKM</a></p>
+</blockquote>
+<p>這篇先作為我的 Digital Garden reference。它不是完整的系統教學，而是記錄我目前對 PKM status、view，以及 AI 協作方式的設計判斷。</p>
+<p>如果之後要讓外部讀者更容易理解，這個主題其實可以拆成好幾篇：Current Actions view、Outcomes view、Captures view、References view，每一個 view 都有自己的設計目的。這篇先把核心想法放在一起。</p>
+<h3 id="我原本把-status-用錯了">我原本把 status 用錯了<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#我原本把-status-用錯了" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>我最近重新整理了一次自己的 PKM 系統，最大的改變不是多加了什麼新功能，而是重新定義了 <code>status</code> 這個欄位。</p>
+<p>一開始我把 GTD 的流程放進 Obsidian：capture、clarify、organize、reflect、engage。直覺上這很合理，因為我想知道每個 note 現在處於什麼狀態。</p>
+<p>但用了一陣子之後，我發現真正混亂的地方不是 status 太少，而是我用同一個 status 追蹤太多種不同的事情。</p>
+<p>有時候我用 status 表示「這個內容還不完整」。有時候它表示「這個 project 還需要整理」。有時候它又像是在表示「這個機會目前走到哪個流程」。結果每次看 dashboard 時，我其實不太確定自己看到的是內容成熟度、任務進度，還是注意力狀態。</p>
+<p>後來我把這件事拆開：</p>
+<blockquote>
+<p>status 不追蹤內容完整度，而是追蹤 attention workflow：這個容器現在需不需要我的注意力？需要哪一種注意力？</p>
+</blockquote>
+<h3 id="attention-status-是另一個維度">Attention Status 是另一個維度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#attention-status-是另一個維度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>一般人在 PKM 或 project management 裡談 status，常常是在談生命週期：draft / published、applied / interviewing、active / done。這些都很有用，但它們回答的是：</p>
+<blockquote>
+<p>這個東西在它自己的流程裡走到哪一步？</p>
+</blockquote>
+<p>Attention Status 回答的是另一個問題：</p>
+<blockquote>
+<p>這個東西現在需要我哪一種注意力？</p>
+</blockquote>
+<p>這個概念和 GTD 很接近，但我不確定 GTD 是否真的用「Attention Status」這個詞。比較準確地說，它是我把 GTD 的五步驟——Capture, Clarify, Organize, Reflect, Engage——轉化成 PKM metadata 後的命名。</p>
+<p>GTD 官方談 Capture 時，本來就會說要收集「what has your attention」。所以 attention 是 GTD 的核心語彙之一。但 GTD 的五步驟比較像一個 workflow，而不是一組 note status。我的做法是把這個 workflow 變成一個可以被 Obsidian / AI 讀取的狀態欄位。</p>
+<p>因此它不是純粹的 GTD 原教旨用法，而比較像：</p>
+<blockquote>
+<p>GTD workflow × PKM metadata × AI collaboration。</p>
+</blockquote>
+<h3 id="我的六個-attention-status">我的六個 Attention Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#我的六個-attention-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>現在我的 status 只保留很少幾種：</p>
+<ul>
+<li><code>1 Capture</code>：先收進來，還沒有判斷。</li>
+<li><code>2 Clarify</code>：需要釐清它是什麼、為什麼重要、下一步是什麼。</li>
+<li><code>3 Organize</code>：方向大致確定，但需要整理成可用結構。</li>
+<li><code>4 Reflect</code>：需要回顧、整合、重新評估。</li>
+<li><code>5 Engage</code>：可以投入執行，最好有清楚的 next action。</li>
+<li><code>0 Archived</code>：暫時不需要注意，退出 active loop。</li>
+</ul>
+<p>至於各領域自己的生命週期，我不再硬塞進 <code>status</code>。例如文章有 <code>postStatus</code>，機會有 <code>stage</code>，Evergreen note 用 <code>#🌱 / #🌿 / #🌲</code> 表示成熟度。這樣每個欄位只回答一種問題，系統就安靜很多。</p>
+<h3 id="我不把-status-套到所有東西">我不把 status 套到所有東西<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#我不把-status-套到所有東西" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>這套系統還有一個很重要的限制：我沒有把 Attention Status 套到每一筆資料、每一個 action、每一篇 note。</p>
+<p>目前主要只有兩個地方會認真使用 status。</p>
+<p>第一個是 Outcome：追蹤輸出的容器。</p>
+<p>Outcome 包含 project、area、goal 這類「要被推進的容器」。這些東西通常已經不是單純的原始輸入，而是某種已經構成的 outcome。所以它們通常不會從 <code>1 Capture</code> 開始，而是主要落在：</p>
+<ul>
+<li><code>3 Organize</code>：這個 outcome 還需要整理成可信任結構。</li>
+<li><code>4 Reflect</code>：這個 outcome 需要回顧、重新判斷或對齊現況。</li>
+<li><code>5 Engage</code>：這個 outcome 已經可以被推進，且應該有明確 next action。</li>
+</ul>
+<p>也就是說，Outcome status 不追蹤細項 action，而是追蹤「這個輸出容器目前需要哪一種注意力」。</p>
+<p>第二個是 Capture：追蹤輸入類別的 workflow。</p>
+<p>Capture 不是追蹤每一則 clipping、每一篇 journal、每一個 reference，而是追蹤「我需要長期維護的資料類別」。例如 Journal、Clippings、Meeting、Evergreen、Project、Area of Focus、Opportunities 這類 category。</p>
+<p>所以 Capture status 比較常用：</p>
+<ul>
+<li><code>1 Capture</code>：這個資料類別仍在收集，還沒有穩定處理方式。</li>
+<li><code>2 Clarify</code>：需要釐清這類資料到底要怎麼被處理、轉換或輸出。</li>
+<li><code>3 Organize</code>：需要整理成穩定的 workflow 或 dashboard。</li>
+</ul>
+<p>如果每一篇 note、每一個 task、每一則 clipping 都要有 Attention Status，系統會很快變得過度複雜。所以我現在只在有限的容器上使用 status：大概二、三十個 outcome，加上二、三十個 capture category。</p>
+<p>它不是一套要管理所有 metadata 的系統，而是一套幫我和 AI 對齊「哪些容器需要注意力」的系統。</p>
+<h3 id="outcome-現在主要看-goal-層級">Outcome 現在主要看 Goal 層級<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#outcome-現在主要看-goal-層級" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>另一個重要改變是：我現在的 Outcome view 不再主要看 project status，而是看 Goal 層級。</p>
+<p>我以前容易陷入「這個 project 是不是 Engage？那個 area 是不是 Organize？」但現在我更常問的是：這些 project 和 area 到底在服務哪個 1–2 年的深度目標？目前最重要的 goal 是什麼？哪個 stage outcome 真的需要被推進？</p>
+<p>GTD 還有另一個維度是 Horizons of Focus。嚴格來說，常見說法是六層視野：Ground（calendar / next actions）、Projects、Areas、Goals、Vision、Purpose / Principles。</p>
+<p>如果把它視覺化，我現在的系統很像是兩個軸：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>軸</th><th>回答的問題</th><th>在我的系統裡</th></tr></thead><tbody><tr><td>Horizons / Outcome Level</td><td>這件事屬於哪個層級？下一步、project、area、goal、vision、purpose？</td><td>Outcomes 主要看 Goal 層級，再往下連 Project / Area</td></tr><tr><td>Attention Status</td><td>這件事現在需要哪一種注意力？</td><td><code>1 Capture</code> → <code>2 Clarify</code> → <code>3 Organize</code> → <code>4 Reflect</code> → <code>5 Engage</code> / <code>0 Archived</code></td></tr></tbody></table></div>
+<p>這樣我不是只問「這個 project active 嗎？」而是可以問更精準的問題：</p>
+<ul>
+<li>這個 Goal 目前是否真的有被推進？</li>
+<li>哪些 Project 雖然存在，但還停在 <code>3 Organize</code>？</li>
+<li>哪些 Area 需要 <code>4 Reflect</code>，而不是繼續加 task？</li>
+<li>哪些東西其實已經可以 <code>0 Archived</code>？</li>
+</ul>
+<h3 id="status-變成-ai-協作的介面">Status 變成 AI 協作的介面<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#status-變成-ai-協作的介面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>status 仍然存在，但它不一定是我每天手動操作的東西。它更像是 AI 可以讀的 metadata。</p>
+<p>例如我可以直接請 AI 幫我看：目前有哪些 project 還在 <code>3 Organize</code>？哪些 note 的狀態已經不符合真實情況？哪些 outcome 看起來 active，但其實沒有下一步行動？</p>
+<p>這些事情如果全部由我手動檢查會很累，但對 AI 來說，status、frontmatter、links、tasks 都是可讀的線索。</p>
+<p>這讓我對 PKM 的使用方式也改變了。</p>
+<p>在一個基本架構定好之後，我不需要每天像管理資料庫一樣去使用這個架構。我更需要專注在三件事：</p>
+<ol>
+<li>想像我要的成果。</li>
+<li>執行能推進成果的行動。</li>
+<li>處理不同 note、project、goal 之間的關聯性。</li>
+</ol>
+<p>AI 則負責幫我讀取系統、整理狀態、發現不一致、提出可能的下一步。</p>
+<p>所以這套 status 系統對我來說，最後不是為了做出一個漂亮的 dashboard，而是為了建立一個我和 AI 都能理解的協作介面。</p>
+<blockquote>
+<p>status 對我來說不只是 Dashboard filter，而是 AI 理解我目前系統狀態的介面。</p>
+</blockquote>
+<p>人負責方向、判斷與取捨。AI 負責維護結構、讀取狀態、協助對齊。</p>
+<p>這也是我現在對 PKM 最大的感受：</p>
+<blockquote>
+<p>好的系統不是讓我花更多時間管理系統，而是讓我更容易回到真正重要的事情。</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><button id="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-0"><a href="#我原本把-status-用錯了" data-for="我原本把-status-用錯了">我原本把 status 用錯了</a></li><li class="depth-0"><a href="#attention-status-是另一個維度" data-for="attention-status-是另一個維度">Attention Status 是另一個維度</a></li><li class="depth-0"><a href="#我的六個-attention-status" data-for="我的六個-attention-status">我的六個 Attention Status</a></li><li class="depth-0"><a href="#我不把-status-套到所有東西" data-for="我不把-status-套到所有東西">我不把 status 套到所有東西</a></li><li class="depth-0"><a href="#outcome-現在主要看-goal-層級" data-for="outcome-現在主要看-goal-層級">Outcome 現在主要看 Goal 層級</a></li><li class="depth-0"><a href="#status-變成-ai-協作的介面" data-for="status-變成-ai-協作的介面">Status 變成 AI 協作的介面</a></li></ul></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="../en/pkm-attention-status" class="internal">How I Redesigned the Status System in My PKM</a></li><li><a href="../zh/" class="internal">CreateWithLevi</a></li></ul></div></div><footer class><p>Created by Levi © 2026</p><ul><li><a href="https://github.com/CreateWithLevi">GitHub</a></li><li><a href="https://www.linkedin.com/in/li-wei-huang/">Linkedin</a></li></ul></footer></div></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
