@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 0002 — 先定義輸出，再和 AI 協作</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+<main><article>
+  <p class="pill">Lesson 0002</p>
+  <h1>先定義輸出，再和 AI 協作</h1>
+  <p class="lede">這堂課只練一個動作：不要從「我有好多東西」開始，而是從「我想產出哪一種具體成果」開始。</p>
+
+  <div class="callout">
+    <strong>今天的勝利條件：</strong>把一個 input 轉成一句可以直接丟給 AI 的 output-first prompt。
+  </div>
+
+  <h2>核心觀念</h2>
+  <p>AI 很適合幫你展開、整理、比較、產生初稿。但如果你只丟一堆 input，它很容易把事情整理得很完整，卻不一定變成你真正需要的成果。</p>
+  <p>所以先問：</p>
+  <div class="card"><strong>這次我想得到的具體成果是什麼？</strong><br>是一篇文章？一個決策？一份 checklist？一段回覆？一個產品規格？還是一個下一步行動？</div>
+
+  <h2>三句 Prompt 模板</h2>
+  <div class="card">
+    <p><strong>1. Input：</strong>我剛看到 / 經歷的是……</p>
+    <p><strong>2. Question：</strong>我現在真正需要學會或判斷的是……</p>
+    <p><strong>3. Output：</strong>請先幫我做出一個……，我會再用自己的判斷修正。</p>
+  </div>
+
+  <h2>練習 1：選 output</h2>
+  <div class="exercise" data-answer="decision">
+    <strong>情境 A：</strong>客戶提出一個新需求，但你不確定該不該做，也不確定成本。你最需要的輸出是？<br><br>
+    <button data-choice="article">長文草稿</button>
+    <button data-choice="decision">決策筆記</button>
+    <button data-choice="archive">封存清單</button>
+    <div class="feedback"></div>
+  </div>
+  <div class="exercise" data-answer="post">
+    <strong>情境 B：</strong>你剛完成一個很有感的學習，想讓它變成公開思考。你最需要的輸出是？<br><br>
+    <button data-choice="post">文章草稿</button>
+    <button data-choice="invoice">發票備忘</button>
+    <button data-choice="schema">資料模型</button>
+    <div class="feedback"></div>
+  </div>
+  <div class="exercise" data-answer="action">
+    <strong>情境 C：</strong>你整理了很多想法，但發現現有行動沒有改變。你最需要的輸出是？<br><br>
+    <button data-choice="quote">引用整理</button>
+    <button data-choice="action">下一步行動</button>
+    <button data-choice="gallery">圖片集</button>
+    <div class="feedback"></div>
+  </div>
+
+  <h2>練習 2：產生你的 output-first prompt</h2>
+  <div class="answer-box">
+    <label><strong>Input</strong></label>
+    <textarea id="input" placeholder="我剛聽完 / 讀完 / 經歷了……"></textarea>
+    <label><strong>Question</strong></label>
+    <textarea id="question" placeholder="我現在真正需要學會或判斷的是……"></textarea>
+    <label><strong>Output</strong></label>
+    <textarea id="output" placeholder="請先幫我產出……"></textarea>
+    <button id="make" class="secondary">組成 Prompt</button>
+    <div id="result" class="card small"></div>
+  </div>
+
+  <h2>下一次怎麼用</h2>
+  <p>當你準備丟 input 給 AI 前，先停 10 秒，選一個 output 類型。這會讓 AI 從「整理者」變成「成果協作者」。</p>
+  <p>如果你不確定 output 是什麼，可以先問 agent：「這份 input 最值得變成哪三種具體成果？請按對我目前 Goal 的價值排序。」</p>
+
+  <h2>推薦讀物</h2>
+  <p>回看 <a href="../reference/artifact-loop.html">具體成果迴圈 reference</a>。這次重點只看第 2 步 Question 與第 4 步 Concrete Output。</p>
+
+  <footer>這堂課接續 <a href="0001-artifact-loop.html">Lesson 0001</a>。完成後，請把最有價值的 output 寫回 Obsidian 的 Project / Area / Goal 或 Current Action。</footer>
+</article></main>
+<script>
+  document.querySelectorAll('.exercise').forEach(ex => {
+    ex.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ok = btn.dataset.choice === ex.dataset.answer;
+        const fb = ex.querySelector('.feedback');
+        fb.textContent = ok ? '對：這個輸出會直接推進判斷或行動。' : '再想一次：選最能改變下一步行動的輸出。';
+        fb.className = 'feedback ' + (ok ? 'good' : 'warn');
+      });
+    });
+  });
+  document.getElementById('make').addEventListener('click', () => {
+    const input = document.getElementById('input').value.trim() || '（填入 input）';
+    const question = document.getElementById('question').value.trim() || '（填入真正需要學會或判斷的事）';
+    const output = document.getElementById('output').value.trim() || '（填入想要的具體成果）';
+    document.getElementById('result').textContent = `我剛看到 / 經歷的是：${input}\n\n我現在真正需要學會或判斷的是：${question}\n\n請先幫我產出：${output}\n\n請先不要追求完美，先做出可修改的版本，並指出我可能需要補充或判斷的地方。`;
+  });
+</script>
+</body>
+</html>
