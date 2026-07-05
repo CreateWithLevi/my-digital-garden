@@ -20,6 +20,7 @@ aliases:
 
 ## 最近在想的事
 
+- [[zh/input-to-concrete-output|從輸入到具體成果，是一種可以訓練的能力]]
 - [[zh/ai-era-role-positioning|AI 時代，我真正適合的角色不是一個職稱]]
 - [[zh/pkm-attention-status|我如何重新設計 PKM 的 status 系統]]
 - [[zh/ai-era-perspective|當知識不再稀缺，剩下的是什麼？]]
