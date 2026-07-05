@@ -80,7 +80,7 @@ AI 最適合幫你把 output 快速具體化，例如：
 
 下面保留原本的 HTML 互動版本，用來快速練習判斷具體成果類型，以及把你現在的題目壓成一個最小成果。
 
-<iframe src="https://createwithlevi.com/lab/lessons/0001-artifact-loop.html" style="width:100%; min-height:1100px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
+<iframe src="https://createwithlevi.com/lab/lessons/0001-artifact-loop.html" style="width:100%; min-height:900px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
 
 ## 下一次怎麼用
 
@@ -98,3 +98,14 @@ AI 最適合幫你把 output 快速具體化，例如：
 ```text
 這個題目最值得變成哪三種具體成果？請按對我目前 Goal 的價值排序。
 ```
+
+
+## 延伸閱讀
+
+- [The Learning Scientists — 6 Strategies for Effective Learning](https://www.learningscientists.org/blog/2017/4/20-1)：用 retrieval practice 的角度理解為什麼要先自己產出。
+- [Bjork & Bjork — Desirable Difficulties](https://www.unh.edu/teaching-learning-resource-hub/sites/default/files/media/2023-06/itow-introducing-desirable-difficulties-into-practice-and-instruction-bjork-and-bjork.pdf)：理解為什麼稍微費力的回想比順暢閱讀更有效。
+- [Product Talk — Continuous Discovery](https://www.producttalk.org/getting-started-with-discovery/)：提醒具體成果最好能回到真實 opportunity / desired outcome。
+
+## 下一課
+
+如果你已經能判斷具體成果類型，可以接著做 [[zh/lab/lesson-0002|Lesson 0002 — 先定義輸出，再和 AI 協作]]。

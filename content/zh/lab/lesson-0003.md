@@ -74,7 +74,7 @@ description: 選平台、分發方式、觀察反饋與產品想像
 
 下面保留原本的 HTML 互動版本，用來練習選平台，並產生一份最小發布實驗 brief。
 
-<iframe src="https://createwithlevi.com/lab/lessons/0003-package-output-for-impact.html" style="width:100%; min-height:1100px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
+<iframe src="https://createwithlevi.com/lab/lessons/0003-package-output-for-impact.html" style="width:100%; min-height:860px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
 
 ## 下一步
 
@@ -87,3 +87,10 @@ description: 選平台、分發方式、觀察反饋與產品想像
 - **L3 Packaged**：包裝成 repo、template、mini product、服務提案或課程。
 
 速查：[[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]。
+
+
+## 相關連結
+
+- 上一課：[[zh/lab/lesson-0002|Lesson 0002 — 先定義輸出，再和 AI 協作]]
+- 速查：[[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]
+- Lab 首頁：[[zh/ai-collaboration-learning-lab|AI 協作學習實驗室]]

@@ -79,7 +79,7 @@ AI 很適合幫你展開、整理、比較、產生初稿。
 
 下面保留原本的 HTML 互動版本，用來練習選 output，並組成一段 output-first prompt。
 
-<iframe src="https://createwithlevi.com/lab/lessons/0002-output-first-ai-collaboration.html" style="width:100%; min-height:1100px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
+<iframe src="https://createwithlevi.com/lab/lessons/0002-output-first-ai-collaboration.html" style="width:100%; min-height:820px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
 
 ## 下一次怎麼用
 
@@ -92,3 +92,10 @@ AI 很適合幫你展開、整理、比較、產生初稿。
 ```text
 這份 input 最值得變成哪三種具體成果？請按對我目前 Goal 的價值排序。
 ```
+
+
+## 相關連結
+
+- 上一課：[[zh/lab/lesson-0001|Lesson 0001 — 具體成果迴圈]]
+- 速查：[[zh/lab/reference-artifact-loop|具體成果迴圈 reference]]
+- 下一課：[[zh/lab/lesson-0003|Lesson 0003 — 把具體成果包裝成影響力實驗]]

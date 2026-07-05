@@ -3,42 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lesson 0001 — 具體成果迴圈</title>
+  <title>互動練習 — 具體成果迴圈</title>
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
 <main><article>
-  <p class="pill">Lesson 0001 · Completed</p>
-  <h1>把「想學」轉成一個小具體成果</h1>
-  <p class="lede">這堂課只練一件事：當你有一個模糊學習題目時，如何在 30–90 分鐘內產出一個能累積能力、作品或判斷的小東西。</p>
+  <p class="pill">Interactive practice</p>
+  <h1>練習：把 input 壓成具體成果</h1>
+  <p class="lede">這個區塊只保留互動練習。完整概念、延伸閱讀與課堂連結請看外層 Markdown lesson。</p>
 
   <div class="callout">
-    <strong>今天的勝利條件：</strong>你不用學完整個主題，只要能把一個輸入轉成「下一個最小具體成果」。
+    <strong>勝利條件：</strong>把一個輸入轉成「下一個最小具體成果」。
   </div>
 
-  <h2>完成後心得</h2>
-  <p>你這次真正學到的是：從 input 到 output 不是天生會或不會，而是一個可以培養的能力。看到一個輸入時，不只是問「這有沒有用」，而是立刻問：「它可能變成什麼具體成果？」</p>
-  <p>最有用的核心問題是：</p>
-  <div class="card"><strong>我現在真正需要學會或判斷的是什麼？</strong></div>
-  <p>這個問題會把注意力從「我要吸收更多」拉回「我要做出什麼、判斷什麼、改變什麼」。接下來可以把它內化成固定動作：看到 input → 想像可產出的具體成果 → 從 output 目標開始和 AI 討論 → 產出初稿 → 用自己的判斷修正。</p>
-
-  <h2>為什麼這適合你</h2>
-  <p>你的目標不是單純補硬實力或軟實力，而是創造有價值的內容、產品與系統。也就是說，學習最好不要停在「讀過」，而要變成能被展示、測試、重用的具體成果。</p>
-  <p>這也符合幾個高可信學習原則：retrieval practice 讓你先回想而不是只重讀；spacing / interleaving 讓學習分散、混合在真實任務裡；desirable difficulties 則提醒我們，稍微費力的回想常比順暢閱讀更能留下長期能力。參考：<a href="https://www.learningscientists.org/blog/2017/4/20-1">The Learning Scientists</a>、<a href="https://www.unh.edu/teaching-learning-resource-hub/sites/default/files/media/2023-06/itow-introducing-desirable-difficulties-into-practice-and-instruction-bjork-and-bjork.pdf">Bjork & Bjork</a>。</p>
-
-  <h2>核心模型：具體成果迴圈（Artifact Loop）</h2>
-  <p>使用這個 6 步驟。詳細速查見 <a href="../reference/artifact-loop.html">具體成果迴圈 reference</a>。</p>
-  <div class="grid">
-    <div class="card"><strong>Input</strong><br>我剛看到/遇到什麼？</div>
-    <div class="card"><strong>Question</strong><br>我現在真正需要學會或判斷的是什麼？</div>
-    <div class="card"><strong>Retrieval</strong><br>先用自己的話說。</div>
-    <div class="card"><strong>Concrete Output</strong><br>做一個小具體成果。</div>
-    <div class="card"><strong>Feedback</strong><br>取得回饋或測試。</div>
-    <div class="card"><strong>Record</strong><br>更新 note / action。</div>
-  </div>
-
-  <h2>小練習 1：判斷具體成果類型</h2>
-  <p>選出最適合的具體成果。每題答案都很短，重點是練判斷。</p>
+  <h2>練習 1：判斷具體成果類型</h2>
+  <p>選出最適合的具體成果。重點不是答對題目，而是練習判斷「哪種 output 最能推進下一步」。</p>
   <div class="exercise" data-answer="brief">
     <strong>情境 A：</strong>你讀到一篇個人品牌文章，覺得它和自己的定位有關，但還沒有完整論點。<br><br>
     <button data-choice="demo">展示版本</button>
@@ -61,7 +40,7 @@
     <div class="feedback"></div>
   </div>
 
-  <h2>小練習 2：把你現在的題目壓成一個具體成果</h2>
+  <h2>練習 2：把你現在的題目壓成一個具體成果</h2>
   <p>用 3 句話填。不要查資料，先 retrieval。</p>
   <div class="answer-box">
     <label><strong>1. 我現在的 input 是：</strong></label>
@@ -73,17 +52,6 @@
     <button id="check" class="secondary">檢查是否夠小</button>
     <div id="checkFeedback" class="feedback"></div>
   </div>
-
-  <h2>下一次怎麼用</h2>
-  <p>你可以直接對 agent 說：</p>
-  <div class="card"><code>$teach 我想把「___」轉成一個 30–90 分鐘具體成果，請用具體成果迴圈帶我做。</code></div>
-  <p>如果你卡住，可以問 agent：「這個題目應該做成 Evergreen、文章簡報、決策筆記、展示版本還是任務？」</p>
-
-  <h2>推薦讀物</h2>
-  <p>主讀：<a href="https://www.learningscientists.org/blog/2017/4/20-1">The Learning Scientists — 6 Strategies for Effective Learning</a>。讀的時候只問一個問題：我怎麼把 retrieval practice 放進自己的 AI 協作流程？</p>
-  <p>產品方向補充：<a href="https://www.producttalk.org/getting-started-with-discovery/">Product Talk — Continuous Discovery</a>，用來提醒「具體成果」最好能回到真實 opportunity / desired outcome。</p>
-
-  <footer>完成後，回到 Obsidian 更新對應的 Project / Area / Goal。這堂課對應 mission：用 AI 協作創造有價值的內容、產品與系統。下一堂：<a href="0002-output-first-ai-collaboration.html">Lesson 0002 — 先定義輸出，再和 AI 協作</a>。</footer>
 </article></main>
 <script>
   document.querySelectorAll('.exercise').forEach(ex => {
