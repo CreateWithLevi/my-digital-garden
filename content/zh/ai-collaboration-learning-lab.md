@@ -23,14 +23,14 @@ description: 一組用來練習把輸入轉成具體成果，並把具體成果�
 
 | Lesson | 你會練習什麼 | 打開 |
 |---|---|---|
-| Lesson 0001 — 具體成果迴圈 | 把模糊 input 轉成下一個最小具體成果 | <a href="https://createwithlevi.com/lab/lessons/0001-artifact-loop.html">Open</a> |
-| Lesson 0002 — 先定義輸出，再和 AI 協作 | 用 output-first prompt 讓 AI 產出可修改版本 | <a href="https://createwithlevi.com/lab/lessons/0002-output-first-ai-collaboration.html">Open</a> |
-| Lesson 0003 — 把具體成果包裝成影響力實驗 | 選平台、分發方式、觀察反饋與產品想像 | <a href="https://createwithlevi.com/lab/lessons/0003-package-output-for-impact.html">Open</a> |
+| Lesson 0001 — 具體成果迴圈 | 把模糊 input 轉成下一個最小具體成果 | [[zh/lab/lesson-0001|Open]] |
+| Lesson 0002 — 先定義輸出，再和 AI 協作 | 用 output-first prompt 讓 AI 產出可修改版本 | [[zh/lab/lesson-0002|Open]] |
+| Lesson 0003 — 把具體成果包裝成影響力實驗 | 選平台、分發方式、觀察反饋與產品想像 | [[zh/lab/lesson-0003|Open]] |
 
 ## References
 
-- <a href="https://createwithlevi.com/lab/reference/artifact-loop.html">具體成果迴圈 reference</a>
-- <a href="https://createwithlevi.com/lab/reference/output-impact-map.html">具體成果影響力地圖 reference</a>
+- [[zh/lab/reference-artifact-loop|具體成果迴圈 reference]]
+- [[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]
 
 ## Recommended path
 
