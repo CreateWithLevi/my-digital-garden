@@ -20,6 +20,8 @@ aliases:
 
 ## 最近在想的事
 
+- [[zh/let-ai-grill-you|不要只問 AI，也讓 AI 反過來問你]]
+- [[zh/organizing-ai-tasks|當 AI 開始處理各種工作，該怎麼分配它們？]]
 - [[zh/ai-collaboration-learning-lab|AI 協作學習實驗室]]
 - [[zh/input-to-concrete-output|從輸入到具體成果，是一種可以訓練的能力]]
 - [[zh/ai-era-role-positioning|AI 時代，我真正適合的角色不是一個職稱]]
