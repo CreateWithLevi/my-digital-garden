@@ -11,8 +11,6 @@ aliases:
 description: 一組 Markdown-first lessons，練習把輸入轉成具體成果，並把具體成果包裝成影響力實驗。
 ---
 
-## AI 協作學習實驗室
-
 這是一個 70 分版本的公開 learning lab。
 
 它不是完整課程，而是我最近在練習的一組 Markdown-first lessons：先用正文說清楚概念，再用小型互動區塊練習如何把 input 轉成具體成果，並放到合適的平台測試反饋與影響力。
