@@ -62,10 +62,8 @@ article {
   }
 }
 
-// Homepage navigation is curated in Markdown. Hide the automatic folder listing
-// so the lab and every note do not reappear as a second, competing entry point.
-article.curated-home + .page-listing {
-  display: none;
+.article-description {
+  line-height: 1.55;
 }
 
 @media (max-width: 600px) {

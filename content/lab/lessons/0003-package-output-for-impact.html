@@ -1,75 +1,100 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>互動練習 — 影響力實驗</title>
-  <link rel="stylesheet" href="../assets/style.css" />
-</head>
-<body>
-<main><article>
-  <p class="pill">Interactive practice</p>
-  <h1>練習：把具體成果包裝成影響力實驗</h1>
-  <p class="lede">這個區塊只保留互動練習。完整概念、平台比較與課堂連結請看外層 Markdown lesson。</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>互動練習 — 影響力實驗</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="pill">Interactive practice</p>
+        <h1>練習：把成果放進真實世界</h1>
+        <p class="lede">
+          這個區塊只保留互動練習。完整概念、使用情境與課堂連結請看外層 Markdown lesson。
+        </p>
 
-  <div class="callout">
-    <strong>勝利條件：</strong>選一個具體成果，決定平台、分發方式、期待反饋，以及它未來可能變成的 product / offer。
-  </div>
+        <div class="callout">
+          <strong>勝利條件：</strong
+          >選一個具體成果，決定誰需要它、要放進哪個情境，以及你要觀察什麼回饋。
+        </div>
 
-  <h2>練習 1：選平台</h2>
-  <div class="exercise" data-answer="garden">
-    <strong>情境 A：</strong>你有一篇還會持續修改的長文，想保留 canonical version。<br><br>
-    <button data-choice="garden">Digital Garden</button>
-    <button data-choice="chat">一般 Chat</button>
-    <button data-choice="invoice">Invoice</button>
-    <div class="feedback"></div>
-  </div>
-  <div class="exercise" data-answer="github">
-    <strong>情境 B：</strong>你做了一組 HTML lesson / prompt / skill，想讓別人可以 fork 或參考。<br><br>
-    <button data-choice="substack">Substack</button>
-    <button data-choice="github">GitHub repo</button>
-    <button data-choice="calendar">Calendar</button>
-    <div class="feedback"></div>
-  </div>
-  <div class="exercise" data-answer="linkedin">
-    <strong>情境 C：</strong>你想測試一個職涯 / AI 協作觀點是否能引起專業圈反饋。<br><br>
-    <button data-choice="linkedin">LinkedIn</button>
-    <button data-choice="archive">Archive</button>
-    <button data-choice="local">Local file</button>
-    <div class="feedback"></div>
-  </div>
+        <h2>練習 1：選擇成果的目的地</h2>
+        <div class="exercise" data-answer="garden">
+          <strong>情境 A：</strong>你有一篇還會持續修改的長文，想保留 canonical version。<br /><br />
+          <button data-choice="garden">Digital Garden</button>
+          <button data-choice="chat">一般 Chat</button>
+          <button data-choice="invoice">Invoice</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="github">
+          <strong>情境 B：</strong>你做了一組 HTML lesson / prompt / skill，想讓別人可以 fork
+          或參考。<br /><br />
+          <button data-choice="chat">一般 Chat</button>
+          <button data-choice="github">GitHub repo</button>
+          <button data-choice="calendar">Calendar</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="conversation">
+          <strong>情境 C：</strong>你想知道一個 AI
+          協作觀點，是否能讓有相同問題的人理解並開始嘗試。<br /><br />
+          <button data-choice="conversation">相關社群或對話</button>
+          <button data-choice="archive">Archive</button>
+          <button data-choice="local">Local file</button>
+          <div class="feedback"></div>
+        </div>
 
-  <h2>練習 2：設計最小發布實驗</h2>
-  <div class="answer-box">
-    <label><strong>1. 我要發布的具體成果</strong></label>
-    <textarea id="output" placeholder="例如：Lesson 0002 — 先定義輸出，再和 AI 協作"></textarea>
-    <label><strong>2. 目標讀者</strong></label>
-    <textarea id="audience" placeholder="例如：同樣用 AI + Obsidian 工作、但不知道如何把 input 轉 output 的創作者 / 工程師"></textarea>
-    <label><strong>3. 包裝平台</strong></label>
-    <textarea id="platform" placeholder="例如：Digital Garden Lab + GitHub repo"></textarea>
-    <label><strong>4. 分發方式</strong></label>
-    <textarea id="distribution" placeholder="例如：LinkedIn 短文，說明我如何用 output-first prompt 管理 AI 協作"></textarea>
-    <label><strong>5. 我要觀察的反饋</strong></label>
-    <textarea id="feedback" placeholder="例如：是否有人保存、留言、詢問 workflow、想看 repo"></textarea>
-    <button id="make" class="secondary">產生發布實驗 brief</button>
-    <div id="result" class="card small"></div>
-  </div>
-</article></main>
-<script>
-  document.querySelectorAll('.exercise').forEach(ex => {
-    ex.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const ok = btn.dataset.choice === ex.dataset.answer;
-        const fb = ex.querySelector('.feedback');
-        fb.textContent = ok ? '對：這個平台和成果的用途一致。' : '再想一次：選最能讓成果被看見、被回饋、被重用的平台。';
-        fb.className = 'feedback ' + (ok ? 'good' : 'warn');
-      });
-    });
-  });
-  document.getElementById('make').addEventListener('click', () => {
-    const get = id => document.getElementById(id).value.trim() || '（待補）';
-    document.getElementById('result').textContent = `發布實驗 brief\n\n成果：${get('output')}\n目標讀者：${get('audience')}\n包裝平台：${get('platform')}\n分發方式：${get('distribution')}\n觀察反饋：${get('feedback')}\n\n最小下一步：先發布 70 分版本，再根據反饋修改，而不是等到完整產品才公開。`;
-  });
-</script>
-</body>
+        <h2>練習 2：設計最小使用實驗</h2>
+        <div class="answer-box">
+          <label><strong>1. 我已經做出的具體成果</strong></label>
+          <textarea
+            id="output"
+            placeholder="例如：Lesson 0002 — 先定義輸出，再和 AI 協作"
+          ></textarea>
+          <label><strong>2. 真正需要它的人或情境</strong></label>
+          <textarea
+            id="audience"
+            placeholder="例如：同樣用 AI + Obsidian 工作、但不知道如何把 input 轉 output 的創作者 / 工程師"
+          ></textarea>
+          <label><strong>3. 成果的目的地</strong></label>
+          <textarea
+            id="platform"
+            placeholder="例如：目前的專案、Digital Garden 或 GitHub repo"
+          ></textarea>
+          <label><strong>4. 如何讓對方實際使用或回應</strong></label>
+          <textarea
+            id="distribution"
+            placeholder="例如：交給一位有相同問題的人使用，再請他說明哪裡不清楚"
+          ></textarea>
+          <label><strong>5. 我要觀察的反饋</strong></label>
+          <textarea
+            id="feedback"
+            placeholder="例如：是否有人保存、留言、詢問 workflow、想看 repo"
+          ></textarea>
+          <button id="make" class="secondary">產生使用實驗 brief</button>
+          <div id="result" class="card small"></div>
+        </div>
+      </article>
+    </main>
+    <script>
+      document.querySelectorAll(".exercise").forEach((ex) => {
+        ex.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const ok = btn.dataset.choice === ex.dataset.answer
+            const fb = ex.querySelector(".feedback")
+            fb.textContent = ok
+              ? "對：這個目的地和成果的用途一致。"
+              : "再想一次：選最能讓成果被理解、使用或回應的情境。"
+            fb.className = "feedback " + (ok ? "good" : "warn")
+          })
+        })
+      })
+      document.getElementById("make").addEventListener("click", () => {
+        const get = (id) => document.getElementById(id).value.trim() || "（待補）"
+        document.getElementById("result").textContent =
+          `使用實驗 brief\n\n成果：${get("output")}\n需要它的人或情境：${get("audience")}\n目的地：${get("platform")}\n使用／回應方式：${get("distribution")}\n觀察反饋：${get("feedback")}\n\n最小下一步：先讓一個真實的人或情境使用，再根據回饋修改。`
+      })
+    </script>
+  </body>
 </html>

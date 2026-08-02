@@ -30,8 +30,3 @@ cssclasses:
 - [[zh/organizing-ai-tasks|當 AI 開始處理各種工作，該怎麼分配它們？]] — 用 Main、長期與一次性 Task，讓不同工作保有清楚責任與上下文。
 - [[zh/input-to-concrete-output|從輸入到具體成果，是一種可以訓練的能力]] — 從收藏、理解與發想到可以被檢查、使用或分享的成果。
 - [[zh/pkm-attention-status|我如何重新設計 PKM 的 status 系統]] — 用通用的注意力狀態，跨越不同領域找出目前真正需要處理的東西。
-
-## 最近更新
-
-- [[zh/let-ai-grill-you|不要只問 AI，也讓 AI 反過來問你]]
-- [[zh/organizing-ai-tasks|當 AI 開始處理各種工作，該怎麼分配它們？]]

@@ -1,5 +1,5 @@
 ---
-title: AI 協作學習實驗室
+title: 和 AI 一起把想法做成成果
 date: 2026-07-05
 tags:
   - AI
@@ -8,35 +8,40 @@ tags:
   - Lab
 aliases:
   - AI Collaboration Learning Lab
-description: 一組 Markdown-first lessons，練習把輸入轉成具體成果，並把具體成果包裝成影響力實驗。
+  - AI 協作學習實驗室
+description: 從模糊輸入、具體成果，到真實回饋的三個練習。
 ---
 
-這是一個 70 分版本的公開 learning lab。
+這是一條簡單的 AI 協作學習路徑。它不只想說明 AI 可以做什麼，而是讓你把自己的情境放進來，最後帶走一個可以繼續使用的成果。
 
-它不是完整課程，而是我最近在練習的一組 Markdown-first lessons：先用正文說清楚概念，再用小型互動區塊練習如何把 input 轉成具體成果，並放到合適的平台測試反饋與影響力。
+三個練習會依序處理：如何從模糊輸入找出下一個具體成果、如何先定義輸出再和 AI 協作，以及如何讓成果接觸真實世界、取得可以幫助你繼續判斷的回饋。
 
-目前先放在 Digital Garden，作為可以慢慢修改、補英文版、或未來整理成 GitHub repo / resource page 的版本。互動區塊暫時用 HTML iframe 嵌入，之後再評估是否改成 Quartz component 或獨立 learning product。
+這還不是完整的線上課程。每一課先用文章說清楚概念，再保留真正需要輸入、選擇或即時回饋的互動練習。
 
-## Lessons
+[[zh/lab/index|← 回到 Learning Lab]]
 
-| Lesson | 你會練習什麼 | 打開 |
-|---|---|---|
-| Lesson 0001 — 具體成果迴圈 | 把模糊 input 轉成下一個最小具體成果 | [[zh/lab/lesson-0001|Open]] |
-| Lesson 0002 — 先定義輸出，再和 AI 協作 | 用 output-first prompt 讓 AI 產出可修改版本 | [[zh/lab/lesson-0002|Open]] |
-| Lesson 0003 — 把具體成果包裝成影響力實驗 | 選平台、分發方式、觀察反饋與產品想像 | [[zh/lab/lesson-0003|Open]] |
+## 三步學習路徑
 
-## References
+| 步驟                        | 你會練習什麼                               | 開始                 |
+| --------------------------- | ------------------------------------------ | -------------------- | ---------- |
+| 1. 具體成果迴圈             | 把模糊輸入轉成下一個最小具體成果           | [[zh/lab/lesson-0001 | 開始練習]] |
+| 2. 先定義輸出，再和 AI 協作 | 讓 AI 先做出你真正需要的可修改版本         | [[zh/lab/lesson-0002 | 開始練習]] |
+| 3. 把成果放進真實世界       | 選擇合適的使用情境，取得可以繼續判斷的回饋 | [[zh/lab/lesson-0003 | 開始練習]] |
 
-- [[zh/lab/reference-artifact-loop|具體成果迴圈 reference]]
-- [[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]
+## 你會帶走什麼
 
-## Recommended path
+- 一個足夠小、可以開始推進的具體成果。
+- 一段以輸出為起點、可以交給 AI 的協作說明。
+- 一個讓成果接觸使用者、工作或公開情境的最小實驗。
+
+## 建議走法
 
 1. 先讀：[[zh/input-to-concrete-output|從輸入到具體成果，是一種可以訓練的能力]]
 2. 再做 Lesson 0001 和 Lesson 0002。
-3. 如果你已經有一個成果想公開，做 Lesson 0003。
-4. 最後回頭修改自己的筆記、文章、專案或下一步行動。
+3. 如果你已經有一個成果想拿去使用或分享，再做 Lesson 0003。
+4. 最後把結果帶回自己的文章、專案、工作或下一步行動。
 
-## Preview
+## References
 
-建議先打開 [[zh/lab/lesson-0001|Lesson 0001]]。每一課都會先用 Markdown 呈現正文，再在頁面中段或後段嵌入互動練習區。
+- [[zh/lab/reference-artifact-loop|具體成果迴圈]]
+- [[zh/lab/reference-output-impact-map|具體成果影響力地圖]]

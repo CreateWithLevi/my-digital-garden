@@ -8,15 +8,11 @@ tags:
 description: 用 output-first prompt 讓 AI 產出可修改版本
 ---
 
-## Lesson 0002 — 先定義輸出，再和 AI 協作
-
 這堂課只練一個動作：
 
 > 不要從「我有好多東西」開始，而是從「我想產出哪一種具體成果」開始。
 
-<div style="margin: 1rem 0 1.5rem;">
-  <a href="/zh/ai-collaboration-learning-lab">← 回到 AI 協作學習實驗室</a>
-</div>
+[[zh/ai-collaboration-learning-lab|← 回到「和 AI 一起把想法做成成果」]]
 
 ## 核心觀念
 
@@ -54,7 +50,7 @@ AI 很適合幫你展開、整理、比較、產生初稿。
 
 ```text
 我剛看到的是：幾篇關於 AI agent 節省 token 和 context 管理的文章。
-我現在真正需要判斷的是：這些技巧是否值得整合進我的 Claudian / Codex 工作流。
+我現在真正需要判斷的是：這些技巧是否值得整合進我目前的 AI 工作流。
 請先幫我做出一份決策筆記，包含：可用技巧、適用情境、風險、下一步測試。
 ```
 
@@ -64,13 +60,13 @@ AI 很適合幫你展開、整理、比較、產生初稿。
 
 不同 output 會讓同一份 input 走向完全不同的結果：
 
-| 你要的 output | AI 會偏向做什麼 |
-|---|---|
-| 摘要 | 壓縮內容 |
-| 決策筆記 | 比較選項與取捨 |
-| 文章草稿 | 找主軸、段落與語氣 |
-| Checklist | 提取可重複流程 |
-| 專案 action | 轉成可執行任務 |
+| 你要的 output  | AI 會偏向做什麼    |
+| -------------- | ------------------ |
+| 摘要           | 壓縮內容           |
+| 決策筆記       | 比較選項與取捨     |
+| 文章草稿       | 找主軸、段落與語氣 |
+| Checklist      | 提取可重複流程     |
+| 專案 action    | 轉成可執行任務     |
 | Reference note | 建立長期可重用知識 |
 
 所以 output-first 不是形式，而是協作方向的設定。
@@ -93,9 +89,8 @@ AI 很適合幫你展開、整理、比較、產生初稿。
 這份 input 最值得變成哪三種具體成果？請按對我目前 Goal 的價值排序。
 ```
 
-
 ## 相關連結
 
 - 上一課：[[zh/lab/lesson-0001|Lesson 0001 — 具體成果迴圈]]
 - 速查：[[zh/lab/reference-artifact-loop|具體成果迴圈 reference]]
-- 下一課：[[zh/lab/lesson-0003|Lesson 0003 — 把具體成果包裝成影響力實驗]]
+- 下一課：[[zh/lab/lesson-0003|Lesson 0003 — 把成果放進真實世界]]

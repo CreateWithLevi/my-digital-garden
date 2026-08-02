@@ -1,20 +1,16 @@
 ---
-title: Lesson 0003 — 把具體成果包裝成影響力實驗
+title: Lesson 0003 — 把成果放進真實世界
 date: 2026-07-05
 tags:
   - AI
   - 學習
   - Lab
-description: 選平台、分發方式、觀察反饋與產品想像
+description: 選擇合適的使用情境，取得可以幫助你繼續判斷的回饋
 ---
 
-## Lesson 0003 — 把具體成果包裝成影響力實驗
+這堂課不練「再多做一個成果」，而是把一個已經存在的成果，交給真正需要它的人或情境，設計一個最小使用與回饋實驗。
 
-這堂課不練「再多做一個成果」，而是練習把一個已經存在的成果，放到合適的平台，設計一個最小發布與反饋實驗。
-
-<div style="margin: 1rem 0 1.5rem;">
-  <a href="/zh/ai-collaboration-learning-lab">← 回到 AI 協作學習實驗室</a>
-</div>
+[[zh/ai-collaboration-learning-lab|← 回到「和 AI 一起把想法做成成果」]]
 
 ## 為什麼要包裝
 
@@ -23,7 +19,7 @@ description: 選平台、分發方式、觀察反饋與產品想像
 但如果把它稍微包裝，就可能變成：
 
 - 一篇 Digital Garden 文章
-- 一個 LinkedIn post
+- 一則適合某個社群的短文
 - 一個 GitHub repo
 - 一個 reusable template
 - 一個 mini course / lab
@@ -34,37 +30,37 @@ description: 選平台、分發方式、觀察反饋與產品想像
 
 ## 五步驟
 
-每次要發布或包裝一個成果，可以問：
+每次要讓一個成果進入真實世界，可以問：
 
-1. **我要發布的具體成果是什麼？**
-2. **目標讀者是誰？**
-3. **它最適合放在哪個平台？**
-4. **我要如何讓人看到？**
+1. **我已經做出的具體成果是什麼？**
+2. **誰或哪個情境真正需要它？**
+3. **對方要在哪裡才能理解或使用它？**
+4. **我要如何讓它接觸真實使用？**
 5. **我要觀察什麼反饋？**
 
-## 平台選擇
+## 選擇使用情境
 
-不同平台代表不同用途：
+成果不一定要公開，也沒有固定的下一個平台。目的地應該由成果要服務的人與情境決定：
 
-| 平台 | 適合放什麼 | 主要價值 |
-|---|---|---|
-| Digital Garden | 長期思考、reference、公開草稿 | 累積可連結的知識資產 |
-| LinkedIn | 專業觀點、案例、職涯定位 | 觸及機會與人脈 |
-| GitHub | code、template、skill、工具 | 建立可信的技術證據 |
-| Substack | 連載內容、newsletter | 建立穩定讀者關係 |
-| Portfolio | 精選案例與成果 | 支撐接案 / 求職 / 合作 |
-| Internal PKM | 尚未成熟的想法 | 保留上下文與後續行動 |
+| 目的地           | 適合放什麼                    | 主要價值                 |
+| ---------------- | ----------------------------- | ------------------------ |
+| 目前的專案或工作 | 決策、規格、流程、prototype   | 直接改變下一步行動       |
+| Digital Garden   | 長期思考、reference、公開草稿 | 累積可連結的知識資產     |
+| GitHub           | code、template、skill、工具   | 讓成果能被檢查與使用     |
+| Portfolio        | 精選案例與成果                | 支撐合作、服務或職涯機會 |
+| 社群或對話       | 一個可以獨立理解的觀點或問題  | 取得讀者回應與新的角度   |
+| Internal PKM     | 尚未成熟或只服務自己的成果    | 保留上下文與後續行動     |
 
-## 最小發布實驗
+## 最小使用實驗
 
 不需要一次包裝成完整產品。
 
 比較好的方式是先做一個 70 分版本：
 
-1. 先發布到 Digital Garden
-2. 自己用手機和電腦讀一次
-3. 請 Jiu 或一位可信任的人給直覺回饋
-4. 再決定要不要整理成 LinkedIn post、英文版、repo 或產品頁
+1. 選擇一個真正需要這個成果的人或情境
+2. 做出一個對方可以理解、使用或回應的版本
+3. 請一位可信任的人實際使用，或把它放進真實工作
+4. 根據回饋決定要修改、保留、擴大，還是停止
 
 這樣做的重點是：
 
@@ -72,25 +68,24 @@ description: 選平台、分發方式、觀察反饋與產品想像
 
 ## 互動練習區
 
-下面保留原本的 HTML 互動版本，用來練習選平台，並產生一份最小發布實驗 brief。
+下面保留原本的 HTML 互動版本，用來練習選擇成果的目的地，並產生一份最小使用實驗 brief。
 
 <iframe src="https://createwithlevi.com/lab/lessons/0003-package-output-for-impact.html" style="width:100%; min-height:860px; border:1px solid var(--lightgray); border-radius:12px; background:white;"></iframe>
 
 ## 下一步
 
-把產生的 brief 貼回 [[zh/ai-collaboration-learning-lab|AI 協作學習實驗室]]、對應 project，或你的 PKM action 裡。
+把產生的 brief 帶回對應的專案、文章、工作或下一步行動。
 
 然後判斷它目前是哪一層：
 
-- **L1 Public Draft**：先公開，讓自己能讀、能改、能分享。
-- **L2 Distributed**：整理成適合 LinkedIn / newsletter / community 的版本。
-- **L3 Packaged**：包裝成 repo、template、mini product、服務提案或課程。
+- **先使用**：放進自己的工作或專案，確認它真的有幫助。
+- **再分享**：整理成另一個人也能理解或使用的版本。
+- **最後才擴大**：有重複需求與回饋時，再考慮 repo、template、產品、服務或課程。
 
 速查：[[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]。
-
 
 ## 相關連結
 
 - 上一課：[[zh/lab/lesson-0002|Lesson 0002 — 先定義輸出，再和 AI 協作]]
 - 速查：[[zh/lab/reference-output-impact-map|具體成果影響力地圖 reference]]
-- Lab 首頁：[[zh/ai-collaboration-learning-lab|AI 協作學習實驗室]]
+- Learning Path：[[zh/ai-collaboration-learning-lab|和 AI 一起把想法做成成果]]

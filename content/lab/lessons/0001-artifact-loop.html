@@ -1,85 +1,119 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>互動練習 — 具體成果迴圈</title>
-  <link rel="stylesheet" href="../assets/style.css" />
-</head>
-<body>
-<main><article>
-  <p class="pill">Interactive practice</p>
-  <h1>練習：把 input 壓成具體成果</h1>
-  <p class="lede">這個區塊只保留互動練習。完整概念、延伸閱讀與課堂連結請看外層 Markdown lesson。</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>互動練習 — 具體成果迴圈</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="pill">Interactive practice</p>
+        <h1>練習：把 input 壓成具體成果</h1>
+        <p class="lede">
+          這個區塊只保留互動練習。完整概念、延伸閱讀與課堂連結請看外層 Markdown lesson。
+        </p>
 
-  <div class="callout">
-    <strong>勝利條件：</strong>把一個輸入轉成「下一個最小具體成果」。
-  </div>
+        <div class="callout"><strong>勝利條件：</strong>把一個輸入轉成「下一個最小具體成果」。</div>
 
-  <h2>練習 1：判斷具體成果類型</h2>
-  <p>選出最適合的具體成果。重點不是答對題目，而是練習判斷「哪種 output 最能推進下一步」。</p>
-  <div class="exercise" data-answer="brief">
-    <strong>情境 A：</strong>你讀到一篇個人品牌文章，覺得它和自己的定位有關，但還沒有完整論點。<br><br>
-    <button data-choice="demo">展示版本</button>
-    <button data-choice="brief">文章簡報</button>
-    <button data-choice="script">影片腳本</button>
-    <div class="feedback"></div>
-  </div>
-  <div class="exercise" data-answer="decision">
-    <strong>情境 B：</strong>你在 Zouluh 發現「銀行連結」可能太早要求，想釐清產品入口策略。<br><br>
-    <button data-choice="quiz">小測驗</button>
-    <button data-choice="decision">決策筆記</button>
-    <button data-choice="glossary">術語表</button>
-    <div class="feedback"></div>
-  </div>
-  <div class="exercise" data-answer="explain">
-    <strong>情境 C：</strong>你發現自己對 GIL / thread 不熟，但短期不是為了面試刷題，而是要能講清楚。<br><br>
-    <button data-choice="calendar">行事曆</button>
-    <button data-choice="explain">一頁解釋</button>
-    <button data-choice="portfolio">作品集</button>
-    <div class="feedback"></div>
-  </div>
+        <h2>練習 1：判斷具體成果類型</h2>
+        <p>選出最適合的具體成果。重點不是答對題目，而是練習判斷「哪種 output 最能推進下一步」。</p>
+        <div class="exercise" data-answer="brief">
+          <strong>情境 A：</strong
+          >你讀到一篇個人品牌文章，覺得它和自己的定位有關，但還沒有完整論點。<br /><br />
+          <button data-choice="demo">展示版本</button>
+          <button data-choice="brief">文章簡報</button>
+          <button data-choice="script">影片腳本</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="decision">
+          <strong>情境 B：</strong
+          >你發現一個產品可能太早要求使用者提供敏感資訊，想釐清更合適的入口策略。<br /><br />
+          <button data-choice="quiz">小測驗</button>
+          <button data-choice="decision">決策筆記</button>
+          <button data-choice="glossary">術語表</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="explain">
+          <strong>情境 C：</strong
+          >你讀到一個技術概念，能看懂名詞，卻還沒辦法用自己的話說清楚。<br /><br />
+          <button data-choice="calendar">行事曆</button>
+          <button data-choice="explain">一頁解釋</button>
+          <button data-choice="portfolio">作品集</button>
+          <div class="feedback"></div>
+        </div>
 
-  <h2>練習 2：把你現在的題目壓成一個具體成果</h2>
-  <p>用 3 句話填。不要查資料，先 retrieval。</p>
-  <div class="answer-box">
-    <label><strong>1. 我現在的 input 是：</strong></label>
-    <textarea id="input" placeholder="例如：我讀完一篇文章，發現自己其實不太會把輸入轉成輸出。"></textarea>
-    <label><strong>2. 我現在真正需要學會或判斷的是：</strong></label>
-    <textarea id="question" placeholder="例如：我如何在看到 input 時，立刻判斷它能產出什麼？"></textarea>
-    <label><strong>3. 下一個最小具體成果是：</strong></label>
-    <textarea id="artifact" placeholder="例如：一篇 800–1200 字短文，整理 input → output 的學習心得。"></textarea>
-    <button id="check" class="secondary">檢查是否夠小</button>
-    <div id="checkFeedback" class="feedback"></div>
-  </div>
-</article></main>
-<script>
-  document.querySelectorAll('.exercise').forEach(ex => {
-    ex.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const ok = btn.dataset.choice === ex.dataset.answer;
-        const fb = ex.querySelector('.feedback');
-        fb.textContent = ok ? '對：這個具體成果夠小，而且能讓下一步更清楚。' : '再想一次：選能最快澄清判斷、留下可回顧產出的形式。';
-        fb.className = 'feedback ' + (ok ? 'good' : 'warn');
-      });
-    });
-  });
-  document.getElementById('check').addEventListener('click', () => {
-    const a = document.getElementById('artifact').value.trim();
-    const fb = document.getElementById('checkFeedback');
-    const smallWords = ['一頁','30','60','90','brief','note','展示','草稿','清單','圖','決策','解釋','短文'];
-    const tooBig = ['完整','全部','徹底','系統性學完','所有'];
-    const small = smallWords.some(w => a.toLowerCase().includes(w.toLowerCase()));
-    const big = tooBig.some(w => a.includes(w));
-    if (!a) {
-      fb.textContent = '先寫下一個具體成果。'; fb.className = 'feedback warn'; return;
-    }
-    if (small && !big) {
-      fb.textContent = '看起來夠小。下一步：請 agent 幫你把它做成文件或 task。'; fb.className = 'feedback good';
-    } else {
-      fb.textContent = '可能還太大。試著加上時間盒，例如「30 分鐘內的一頁 note」。'; fb.className = 'feedback warn';
-    }
-  });
-</script>
-</body>
+        <h2>練習 2：把你現在的題目壓成一個具體成果</h2>
+        <p>用 3 句話填。不要查資料，先 retrieval。</p>
+        <div class="answer-box">
+          <label><strong>1. 我現在的 input 是：</strong></label>
+          <textarea
+            id="input"
+            placeholder="例如：我讀完一篇文章，發現自己其實不太會把輸入轉成輸出。"
+          ></textarea>
+          <label><strong>2. 我現在真正需要學會或判斷的是：</strong></label>
+          <textarea
+            id="question"
+            placeholder="例如：我如何在看到 input 時，立刻判斷它能產出什麼？"
+          ></textarea>
+          <label><strong>3. 下一個最小具體成果是：</strong></label>
+          <textarea
+            id="artifact"
+            placeholder="例如：一篇 800–1200 字短文，整理 input → output 的學習心得。"
+          ></textarea>
+          <button id="check" class="secondary">檢查是否夠小</button>
+          <div id="checkFeedback" class="feedback"></div>
+        </div>
+      </article>
+    </main>
+    <script>
+      document.querySelectorAll(".exercise").forEach((ex) => {
+        ex.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const ok = btn.dataset.choice === ex.dataset.answer
+            const fb = ex.querySelector(".feedback")
+            fb.textContent = ok
+              ? "對：這個具體成果夠小，而且能讓下一步更清楚。"
+              : "再想一次：選能最快澄清判斷、留下可回顧產出的形式。"
+            fb.className = "feedback " + (ok ? "good" : "warn")
+          })
+        })
+      })
+      document.getElementById("check").addEventListener("click", () => {
+        const a = document.getElementById("artifact").value.trim()
+        const fb = document.getElementById("checkFeedback")
+        const smallWords = [
+          "一頁",
+          "30",
+          "60",
+          "90",
+          "brief",
+          "note",
+          "展示",
+          "草稿",
+          "清單",
+          "圖",
+          "決策",
+          "解釋",
+          "短文",
+        ]
+        const tooBig = ["完整", "全部", "徹底", "系統性學完", "所有"]
+        const small = smallWords.some((w) => a.toLowerCase().includes(w.toLowerCase()))
+        const big = tooBig.some((w) => a.includes(w))
+        if (!a) {
+          fb.textContent = "先寫下一個具體成果。"
+          fb.className = "feedback warn"
+          return
+        }
+        if (small && !big) {
+          fb.textContent = "看起來夠小。下一步：請 agent 幫你把它做成文件或 task。"
+          fb.className = "feedback good"
+        } else {
+          fb.textContent = "可能還太大。試著加上時間盒，例如「30 分鐘內的一頁 note」。"
+          fb.className = "feedback warn"
+        }
+      })
+    </script>
+  </body>
 </html>

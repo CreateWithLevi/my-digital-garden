@@ -1,46 +1,72 @@
 :root {
-  --bg: #fbfaf7;
-  --paper: #ffffff;
-  --ink: #1f2933;
-  --muted: #667085;
-  --line: #e6e0d8;
-  --accent: #b45309;
-  --accent-soft: #fff4e6;
-  --green: #256f4a;
-  --red: #b42318;
-  --blue: #1d4ed8;
+  --bg: rgb(237, 230, 222);
+  --paper: rgba(255, 255, 255, 0.32);
+  --ink: rgb(86, 82, 118);
+  --muted: rgb(103, 99, 128);
+  --line: rgba(101, 146, 157, 0.38);
+  --accent: rgb(208, 132, 108);
+  --accent-soft: rgba(208, 132, 108, 0.12);
+  --green: #3f765d;
+  --red: #a84d4d;
+  --blue: rgb(101, 146, 157);
 }
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: ui-serif, Georgia, 'Noto Serif TC', 'Noto Serif CJK TC', serif;
-  line-height: 1.7;
+  font-family: "New York", Georgia, "Times New Roman", "Heiti TC", serif;
+  line-height: 1.85;
 }
 main {
   max-width: 880px;
-  margin: 48px auto;
-  padding: 0 24px 80px;
+  margin: 0 auto;
+  padding: 24px;
 }
 article {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 38px;
-  box-shadow: 0 12px 36px rgba(31, 41, 51, 0.06);
+  border-radius: 12px;
+  padding: 32px;
 }
-h1, h2, h3 { line-height: 1.25; letter-spacing: -0.02em; }
-h1 { font-size: 2.25rem; margin: 0 0 0.25rem; }
-h2 { margin-top: 2.2rem; font-size: 1.35rem; color: var(--accent); }
-h3 { margin-top: 1.4rem; font-size: 1.05rem; }
-p.lede { font-size: 1.12rem; color: var(--muted); margin-top: 0.4rem; }
-a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-.card, .exercise, .answer-box {
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+}
+h2 {
+  margin-top: 2.2rem;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+h3 {
+  margin-top: 1.4rem;
+  font-size: 1.08rem;
+}
+p.lede {
+  font-size: 1.08rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+a {
+  color: var(--blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.card,
+.exercise,
+.answer-box {
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 10px;
   padding: 18px 20px;
-  background: #fffdf9;
+  background: rgba(255, 255, 255, 0.46);
   margin: 18px 0;
 }
 .callout {
@@ -70,30 +96,79 @@ button {
   background: var(--accent);
   color: white;
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 650;
+  font: inherit;
 }
-button.secondary { background: white; color: var(--accent); }
-textarea, input[type='text'] {
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+}
+textarea,
+input[type="text"] {
   width: 100%;
   min-height: 90px;
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 12px;
   font: inherit;
-  background: white;
+  background: rgba(255, 255, 255, 0.72);
 }
-.feedback { margin-top: 10px; font-weight: 650; }
-.good { color: var(--green); }
-.warn { color: var(--red); }
-.small { font-size: 0.92rem; color: var(--muted); }
-code { background: #f2eee8; padding: 0.1em 0.35em; border-radius: 6px; }
-footer { margin-top: 36px; color: var(--muted); font-size: 0.95rem; }
+.feedback {
+  margin-top: 10px;
+  font-weight: 650;
+}
+.good {
+  color: var(--green);
+}
+.warn {
+  color: var(--red);
+}
+.small {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+code {
+  background: rgba(101, 146, 157, 0.12);
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+}
+footer {
+  margin-top: 36px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 12px;
+  }
+
+  article {
+    padding: 22px 18px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+}
 @media print {
-  body { background: white; }
-  main { margin: 0; max-width: none; }
-  article { border: 0; box-shadow: none; padding: 0; }
-  button, textarea { display: none; }
+  body {
+    background: white;
+  }
+  main {
+    margin: 0;
+    max-width: none;
+  }
+  article {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  button,
+  textarea {
+    display: none;
+  }
 }
 table {
   width: 100%;
@@ -101,7 +176,8 @@ table {
   margin: 18px 0;
   font-size: 0.95rem;
 }
-th, td {
+th,
+td {
   border: 1px solid var(--line);
   padding: 10px 12px;
   vertical-align: top;
