@@ -85,3 +85,9 @@ AI 的用量再多，也不代表值得把它花在錯誤方向上。對我來�
 真正值得最大化的不是每個 token 產生多少文字，而是其中有多少內容真的承載了我的判斷。
 
 我真正想要的，也不是讓 AI 替我把更多重要的事情做完，而是借助 AI，讓我把事情完成得很重要。
+
+---
+
+如果方向已經形成，下一步可以讀[〈從輸入到具體成果，是一種可以訓練的能力〉](https://createwithlevi.com/zh/input-to-concrete-output)。
+
+如果 AI 已經開始同時處理不同工作，可以接著讀[〈當 AI 開始處理各種工作，該怎麼分配它們？〉](https://createwithlevi.com/zh/organizing-ai-tasks)。
