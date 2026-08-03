@@ -8,135 +8,112 @@ tags:
   - AI
 aliases:
   - How I Redesigned the Status System in My PKM
-description: "I redefined status in my PKM as Attention Status: not a way to track completeness, but a way to track what kind of attention a container needs now."
+description: "I redefined status in my PKM as a cross-domain, cross-level attention state; each domain can still keep its own lifecycle status."
 ---
-> 中文版: [[zh/pkm-attention-status|我如何重新設計 PKM 的 status 系統]]
 
-This note is published as a Digital Garden reference. It is not a complete tutorial for my entire system. It is a snapshot of how I currently think about PKM status, views, and AI collaboration.
+## I Originally Used status for the Wrong Thing
 
-If I wanted to make this easier for external readers, this topic could probably become several separate essays: Current Actions, Outcomes, Captures, and References. Each view has its own purpose. This note keeps the core design decisions in one place.
+I recently reorganized my PKM system. The biggest change was not adding a new feature, but starting to unpack what the `status` field was actually tracking.
 
-### I Was Using Status for Too Many Things
+At first, I put the GTD workflow into Obsidian: capture, clarify, organize, reflect, engage. This felt intuitive because I wanted to know what state each note was currently in.
 
-I recently redesigned part of my PKM system. The biggest change was not adding a new feature, but redefining what the `status` field is supposed to mean.
+After using it for a while, the statuses on my dashboard started to lose their meaning.
 
-At first, I took the GTD workflow and placed it into Obsidian: capture, clarify, organize, reflect, engage. This felt natural. I wanted to know what state each note was in.
+Sometimes `status` meant “this piece of content is incomplete.” Sometimes it meant “this project still needs to be organized.” Sometimes it meant “what stage this opportunity has reached.” The same field was answering three different questions, so in the end each option had to be guessed from context.
 
-After using it for a while, I realized the problem was not that I had too few statuses. The problem was that I was using the same status field to track too many different things.
+The real problem was not that there were too few options. It was that the field’s responsibility was unclear.
 
-Sometimes status meant “this content is not complete yet.” Sometimes it meant “this project still needs to be organized.” Sometimes it meant “this opportunity is at a certain stage in the external process.” When I looked at my dashboard, I could not always tell whether I was looking at content maturity, task progress, or attention state.
+So I eventually left `status` with only one question:
 
-So I separated these concerns:
+> What kind of attention does this container need right now?
 
-> status should not track content completeness. It should track the attention workflow: does this container need my attention now, and what kind of attention does it need?
+## Lifecycle and Attention Are Two Dimensions
 
-### Attention Status Is a Separate Dimension
+When people talk about status in knowledge management or project management, they are usually talking about the thing’s own lifecycle: an article is a draft or published, an opportunity is being contacted or finished, and a project is in progress or complete.
 
-When people talk about status in PKM or project management, they often mean lifecycle: draft / published, applied / interviewing, active / done. These are useful, but they answer one kind of question:
+These states answer:
 
-> Where is this thing in its own process?
+> Where has this thing reached in its own process?
 
 Attention Status answers a different question:
 
 > What kind of attention does this thing need from me now?
 
-This idea is close to GTD, but I do not know whether GTD officially uses the phrase “Attention Status.” A more accurate description is that I took GTD’s five steps — Capture, Clarify, Organize, Reflect, Engage — and turned them into PKM metadata.
+Both are needed, but they should not be put in the same field. A clearer approach is to let the same piece of information have both kinds of status:
 
-GTD already uses the language of attention. The capture step is about collecting what has your attention. But GTD’s five steps are more of a workflow than a set of note statuses. My version turns that workflow into a state that Obsidian and AI can read.
+- One field describes what state this thing is in for me right now: does it need attention? Should I invest in it, organize it, rethink it, or leave it alone for now?
+- The other field describes where the thing is in its own process: has the article been published, which interview stage has it reached, or is the project in planning, execution, or complete?
 
-So this is not pure GTD. It is more like:
+The first is a general-purpose Attention Status that can apply across domains and different levels of information. The second is the domain’s own conventional status, such as `postStatus`, an interview `stage`, or a project phase. Neither replaces the other; they answer different questions.
 
-> GTD workflow × PKM metadata × AI collaboration.
+This approach was inspired by GTD’s Capture, Clarify, Organize, Reflect, and Engage, but it is not meant to copy GTD into my notes unchanged. It is more like turning a workflow into metadata that both AI and I can read.
 
-### My Six Attention Statuses
+## My Six General-Purpose Statuses
 
-I now keep only a small set of statuses:
+My `status` field now keeps only six options:
 
-- `1 Capture`: collected, but not yet evaluated.
-- `2 Clarify`: needs clarification — what is it, why does it matter, what is the next step?
-- `3 Organize`: the direction is roughly clear, but the structure is not trustworthy yet.
+- `1 Capture`: brought in, but not yet judged.
+- `2 Clarify`: needs clarification — what is it, why does it matter, and what is the next step?
+- `3 Organize`: the direction is roughly clear, but it needs to be organized into a usable structure.
 - `4 Reflect`: needs review, integration, or re-evaluation.
 - `5 Engage`: ready to act on, ideally with a clear next action.
-- `0 Archived`: no longer needs active attention.
+- `0 Archived`: temporarily does not need attention; it exits the active loop.
 
-Domain-specific lifecycles no longer go into `status`. Articles can have `postStatus`. Opportunities can have `stage`. Evergreen notes can use `#🌱 / #🌿 / #🌲` for maturity. Each field should answer one question. This makes the system much quieter.
+These statuses are not a linear measure of completion. `Reflect` is not necessarily closer to finished than `Organize`, and `Archived` does not mean failure. They tell me how to handle this information the next time I notice it.
 
-### I Do Not Apply Status to Everything
+For example, a project may enter `Reflect` because one stage is complete and I need to reconsider the next step, rather than continue adding tasks. An Area that has existed for a long time may also return to `Organize` because its structure has drifted out of shape.
 
-There is an important constraint: I do not apply Attention Status to every note, every task, or every piece of information.
+## The Same Status Set Can Span Different Levels
 
-Right now, status is mainly used in two places.
+The benefit of a general-purpose status is that, in theory, it can apply to every kind of information: a Goal, Project, Area, individual note, Capture category, or even a workflow.
 
-The first is Outcome: containers for output.
+For example:
 
-Outcomes include projects, areas, and goals — things that are meant to be moved forward. These are usually not raw inputs anymore. They already represent some kind of formed outcome. Because of that, they usually do not start from `1 Capture`. They mostly use:
+- A Project can be `5 Engage` because it is ready for execution; its own project phase is “in progress.”
+- An Area can be `4 Reflect` because it needs to be re-evaluated; an Area itself does not have a complete or incomplete state.
+- A Clippings category can be `3 Organize` because its input-to-output workflow still needs organizing.
+- An article can be `2 Clarify` because its core idea is not clear yet; its own `postStatus` can still be Draft.
 
-- `3 Organize`: this outcome still needs a trustworthy structure.
-- `4 Reflect`: this outcome needs review or realignment.
-- `5 Engage`: this outcome is ready to be advanced and should have a next action.
+The same status set can therefore help me cross information levels and find everything that currently needs a certain kind of attention. It is not limited to Outcomes, and the fact that a Capture category tracks a workflow does not make it unsuitable for Attention Status.
 
-In other words, Outcome status does not track the completion of individual actions. It tracks what kind of attention the output container needs.
+When the field is responsible only for attention, I can ask questions across domains:
 
-The second is Capture: workflows for input categories.
-
-Capture does not track every clipping, every journal entry, or every reference. It tracks categories of input that I want to maintain over time, such as Journal, Clippings, Meetings, Evergreen, Projects, Areas of Focus, and Opportunities.
-
-Capture status usually uses:
-
-- `1 Capture`: this input category is still being collected, but the workflow is not stable yet.
-- `2 Clarify`: I need to clarify how this kind of input should be processed, transformed, or used.
-- `3 Organize`: I need to turn it into a stable workflow or dashboard.
-
-If every note, task, and clipping required an Attention Status, the system would become too heavy very quickly. So I only use status on a limited number of containers: roughly a few dozen outcomes and a few dozen capture categories.
-
-This is not a system for managing all metadata. It is a system for helping me and AI align on which containers need attention.
-
-### My Outcome View Now Starts from Goals
-
-Another important change: my Outcome view no longer starts mainly from project status. It starts from the Goal level.
-
-I used to get stuck asking: “Is this project Engage? Is this area Organize?” Now I more often ask: which 1–2 year goal do these projects and areas serve? What is the most important goal right now? Which stage outcome actually needs to move forward?
-
-GTD also has another dimension: Horizons of Focus. Strictly speaking, the common GTD model has six horizons: Ground (calendar / next actions), Projects, Areas, Goals, Vision, and Purpose / Principles.
-
-Visually, my system now feels like two axes:
-
-| Axis | Question | In my system |
-|---|---|---|
-| Horizons / Outcome Level | What level does this belong to — next action, project, area, goal, vision, purpose? | Outcomes mainly start from Goals, then link down to Projects / Areas |
-| Attention Status | What kind of attention does this need now? | `1 Capture` → `2 Clarify` → `3 Organize` → `4 Reflect` → `5 Engage` / `0 Archived` |
-
-This lets me ask more precise questions:
-
-- Is this Goal actually being advanced?
-- Which Projects exist but are still stuck in `3 Organize`?
+- Is this Goal actually moving forward right now?
+- Which Projects exist but are still stuck at `3 Organize`?
 - Which Areas need `4 Reflect` instead of more tasks?
-- Which things can be moved to `0 Archived`?
+- Which things can actually move to `0 Archived`?
 
-### Status Became an Interface for AI Collaboration
+## It Can Also Become a Shared Index for AI
 
-Status still exists, but it is not necessarily something I manually operate every day. It has become metadata that AI can read.
+I also hope this general-purpose status set can become an interface AI uses to read long-term state.
 
-For example, I can ask AI: which projects are still in `3 Organize`? Which notes no longer match their current status? Which outcomes look active but do not have a next action?
+For example, I can ask AI to check: which Projects’ statuses no longer match reality? Which Outcomes look as if they are moving forward but have no next step? Which containers should move from `Engage` back to `Reflect` so they do not keep occupying attention?
 
-Checking all of this manually would be tiring. But for AI, status, frontmatter, links, and tasks are all readable signals.
+Its potential value is that AI does not need to understand every domain’s lifecycle first. It can find all the information marked `Clarify`, `Reflect`, or `Engage`, then use the Project note’s Current Focus, Next, Waiting, and recent evidence to make a judgment.
 
-This changed how I use my PKM.
+I need more results before I can say whether this actually helps AI execute better. At least the meaning is more stable: Attention Status finds attention needs across domains, while domain status describes the progress of the thing itself.
 
-Once a basic structure is in place, I do not need to use the system like a database manager every day. I should focus on three things:
+Once the basic structure is stable, I do not need to maintain it every day like a database. I need to focus more on three things:
 
 1. Imagining the outcome I want.
-2. Taking actions that move those outcomes forward.
-3. Handling relationships between notes, projects, and goals.
+2. Taking actions that move the outcome forward.
+3. Handling the relationships among notes, projects, and goals.
 
-AI can help read the system, organize state, detect inconsistencies, and suggest next steps.
+AI can help read the system, organize state, find inconsistencies, and suggest possible next steps.
 
-So this status system is not ultimately about building a beautiful dashboard. It is about creating an interface that both I and AI can understand.
+Humans are responsible for direction, judgment, and tradeoffs. AI is responsible for maintaining structure, reading state, and helping things stay aligned.
 
-> status is no longer just a dashboard filter. It is an interface through which AI can understand the current state of my system.
+## Two Statuses, Each Answering One Question
 
-Humans provide direction, judgment, and tradeoffs. AI helps maintain structure, read state, and support alignment.
+This design ultimately comes down to a simple distinction:
 
-That is my biggest realization about PKM right now:
+- General-purpose status: What kind of attention does this thing need from me now?
+- Domain status: Where has this thing reached in its own process?
+
+If a field is answering two questions at once, splitting it into two fields is usually clearer than adding more options. The general-purpose status should stay small and stable so it can work across domains; each domain can keep the process details it actually needs.
+
+A good system does not describe every detail. It makes the next judgment easier.
 
 > A good system should not make me spend more time managing the system. It should make it easier to return to what actually matters.
+
+If you want to continue seeing how long-term state supports multiple AI Tasks, you can read [[en/organizing-ai-tasks|When AI Starts Handling Different Kinds of Work, How Should You Organize Them?]].

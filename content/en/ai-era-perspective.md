@@ -6,84 +6,55 @@ tags:
   - personal-brand
 aliases:
   - When Knowledge Is No Longer Scarce, What Remains
-description: In the age of AI, what's truly valuable isn't knowledge itself, but your perspective and judgment
+description: AI can organize knowledge, but deciding what matters, how perspectives form, and which choices we are willing to take responsibility for still requires human judgment.
 ---
-### AI Can Organize Knowledge, but It Doesn't Know What Matters to You
 
-In the age of AI, organizing information is no longer scarce. Feed AI a pile of material, and within seconds it can summarize the key points, outline a structure, or even produce a decent article.
+I used to easily mistake organizing knowledge itself for an output.
 
-But there's one thing about what AI produces: it treats everything equally. It doesn't know which idea resonated deeply with you, which experience mirrors your own situation, or which concept shifted the way you think.
+After reading an article, I would write a summary; after finishing a book, I would organize the key points into notes; when I encountered a new topic, I would collect more information and build a fuller structure. These things are still useful, but with AI, organizing information itself is no longer as scarce. Given enough material, AI can quickly summarize key points, compare different viewpoints, and even write an article that looks complete.
 
-In other words, AI can process information, but it doesn't know **what that knowledge means to you**.
+The harder question gradually became: what in this information matters to me?
 
-If you feel anxious about AI's development — feeling like AI can do so many things and wondering what's left for you — I think this is actually a chance to see things more clearly. Once AI handles the tedious work of organizing information, what truly matters becomes easier to see: your perspective, your judgment, your lived experience.
+AI can infer preferences from my materials and conversations, but it does not naturally know which experience relates to my current situation, which viewpoint changed my thinking, or which choices I am willing to take responsibility for. Unless I make those judgments explicit, even very complete organized content may only preserve every point equally.
 
-These are things AI cannot generate for you. Because it hasn't lived your life.
+### Knowledge Still Matters, but It Needs Human Judgment
 
-### Perspectives Need Knowledge as Evidence; Knowledge Needs Perspectives to Have Value
+Emphasizing perspective does not mean that having an opinion is enough.
 
-There's an easy point of confusion here: when people hear "share your perspective," they often think having opinions alone is enough.
+Opinions without knowledge, evidence, and real experience can easily become hollow. The problem is not that knowledge has lost its value; it is that simply relaying or rearranging knowledge is increasingly less likely to count as a person’s unique contribution.
 
-Not quite. Pure opinions without grounding tend to be hollow. Sharing a perspective still needs to be backed by knowledge and reasoning to truly hold weight.
+What usually creates the difference is how we choose, connect, and use that knowledge: Why keep this viewpoint rather than another? What experience does it connect to? What judgment did it change? What did it lead us to do?
 
-But the reverse is also true — purely organizing knowledge no longer holds unique value, because AI can do it faster and more thoroughly.
+I now use a more concrete test when I look at my own content: Which judgments in this piece only make sense in the context of my experience and tradeoffs? If I remove those parts, is all that remains a summary that anyone—or AI—could have organized?
 
-What's truly valuable is **the output you create after filtering and recombining knowledge through your own experience and judgment**.
+This is not about proving that someone is irreplaceable. It is about checking whether I am only restating information. An article that only lists five productivity methods may not change much when the author changes. But if it explains when a method fails, how the author chose, and how the result changed their later judgment, the reader gets more than information that has merely been organized.
 
-Here's a simple test: if you separate the creator from the work and the work's value stays the same — AI can replace you. But if separating the person from the work causes the value to drop — that's where you're irreplaceable.
+### Perspectives Form Through Repeated Choices
 
-A generic productivity article reads the same no matter who writes it. But an article written by someone you've followed for years, drawing from the path they've actually walked — that's different. Their judgment, their taste, the choices they've made are all woven into it.
+Perspectives do not appear from nowhere. They often begin with small reactions: this is well said; I do not quite agree here; this reminds me of an experience; or this concept might change what I am doing.
 
-If you're struggling with "what value can I still offer," try thinking about it this way: among the things you do, which ones lose value when you're separated from the work? That's the direction you should invest in.
+AI can help summarize, compare, ask follow-up questions, and organize, but I still need to bring these reactions into the process. Each time I keep, discard, revise, or connect something, information that originally came from outside gradually becomes my own understanding.
 
-### How Are Perspectives Formed?
+If a judgment is still vague, I can let AI ask questions back and help different options surface. If the direction is already clear, the next step is to turn that understanding into concrete output that can be checked, used, or shared. Both are more useful for seeing whether a perspective is really mine than continuing to collect more information.
 
-AI can help you organize knowledge, but if you don't articulate your perspective, AI has no way of knowing what it is — it can only infer your thoughts from the materials you've collected.
+### Expertise Is Not Going Away, but Expertise Alone Is Becoming Less and Less Enough
 
-So the key question is: when and how do you "contribute your perspective"?
+I used to push this question toward a distant hypothetical: if AI kept improving, would “expertise” eventually disappear, leaving only interest?
 
-I break this process into three stages:
+Now I think a more accurate description is this: expertise still matters, but the threshold for gaining access to expert knowledge and producing expert-looking output is getting lower. Knowing how to write, design, or build a prototype still has value. Those abilities may simply not be enough to answer what is worth doing, what quality is sufficient, or who will be affected by the result.
 
-**Stage One: Receiving and Digesting**
+This is when interest, curiosity, experience, and responsibility become more visible. Not because they replace expertise, but because they determine what we explore over the long term, how we use our abilities, and where we are willing to invest our time.
 
-When you encounter a source — an article, a book, a video — AI can do the initial organizing and summarizing. But more importantly, after you've gone through the content yourself, certain parts will strike a chord.
+So when knowledge is no longer scarce, what remains is not a new answer that can be separated from knowledge. It is a fuller combination: knowledge provides the foundation, experience provides context, judgment sets the direction, and action lets the perspective be tested against reality.
 
-AI records all the key points equally, but what truly matters is **what this knowledge means to you** — what you thought was well said, where you disagree, what reminded you of your own experience. Start inputting your perspective at this stage, and every step that follows will have clearer direction.
+AI can help me process more information, but it also makes one question harder to avoid:
 
-**Stage Two: Organizing and Condensing**
+> Among all these possibilities, what really matters to me?
 
-Take the thoughts you've collected and organize them, turning scattered sparks of inspiration into structured notes. This is the **first fusion** of your perspective with others' — you're selecting which knowledge is worth recording, which ideas resonate with you, and how different sources connect.
+The answer may not become clear all at once, but I need to start answering it.
 
-AI can assist with initial synthesis, but the final perspective must come from you. Each time you add your own insights to these notes, your perspective gets **condensed** one more time. This process makes contributing perspective incremental — you don't need to synthesize all the complexity at once, but can generate ideas more naturally at different stages.
+---
 
-**Stage Three: Transforming and Sharing**
+If your judgment has not formed yet, you can continue with [“Don’t Just Ask AI—Let AI Ask You Questions Too”](https://createwithlevi.com/en/let-ai-grill-you).
 
-From these thoughts and your perspective, create the content you want to express — an article, a story, a product. The focus is on how you choose to convey knowledge and perspective to others.
-
-At this point, your perspective no longer lives only in your notes — it takes the form of content or projects that create real impact.
-
-### These Three Stages Are Meaningful in Themselves
-
-I think "meaning" can be broken into two parts: **a sense of progress** and **a sense of contribution**.
-
-Sense of progress: as you digest others' views, form your own ideas, and let your perspective mature — this process itself makes you feel like you're moving forward.
-
-Sense of contribution: when you turn your perspective into content or projects, sharing them with others and creating impact — that's the moment your effort becomes meaningful to others too.
-
-The entire process is itself an act of creating meaning. Value doesn't begin only at the moment you hit "publish" — it starts from the moment you choose what to pay attention to.
-
-### When Expertise Ceases to Exist, What Remains Is Interest
-
-Taking this one step further: if AI keeps advancing, the concept of "expertise" may become increasingly blurred. When everyone can achieve expert-level output through AI, expertise itself is no longer a moat.
-
-So what's left?
-
-I think things will become increasingly pure — what remains is **interest**. The things you genuinely want to explore, the directions you can't stop learning about, the work you'd still do even without being paid.
-
-When the gap in professional knowledge is leveled by AI, your unique curiosity becomes the most important differentiator. Not because AI doesn't understand those topics, but because it hasn't lived those experiences. AI can analyze your perspective, but it can't think from your vantage point; it can mimic your style, but it has never truly cared about anything; it can process information, but it can't decide "what matters and what doesn't" — because it doesn't have a real life.
-
-So finding your value in the AI era isn't about looking outward — learning more skills, chasing more trends. It's about looking **inward** — figuring out what you truly care about, what your experiences have taught you, and what you want to say to the world.
-
-Sometimes, how you do something matters more than what you do. The mindset you bring to organizing, sharing, and creating determines what these acts mean — both to you and to others.
-
-Then, say it out loud.
+If you already know what matters, the next step is [“From Input to Concrete Output Is a Skill You Can Train”](https://createwithlevi.com/en/input-to-concrete-output).
