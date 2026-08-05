@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Practice — Minimum Use Experiment</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="pill">Interactive practice</p>
+        <h1>Practice: Bring an Outcome into the Real World</h1>
+        <p class="lede">
+          This section contains only the interactive exercise. See the surrounding lesson for the
+          full idea, contexts of use, and course links.
+        </p>
+
+        <div class="callout">
+          <strong>Win condition:</strong> Choose one concrete outcome, decide who needs it and where
+          it should go, then define the feedback you will observe.
+        </div>
+
+        <h2>Exercise 1: Choose the Destination</h2>
+        <div class="exercise" data-answer="garden">
+          <strong>Scenario A:</strong> You have a long article that will keep evolving and want to
+          preserve a canonical version.<br /><br />
+          <button data-choice="garden">Digital Garden</button>
+          <button data-choice="chat">General chat</button>
+          <button data-choice="invoice">Invoice</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="github">
+          <strong>Scenario B:</strong> You made a set of HTML lessons, prompts, or skills that other
+          people could inspect or fork.<br /><br />
+          <button data-choice="chat">General chat</button>
+          <button data-choice="github">GitHub repository</button>
+          <button data-choice="calendar">Calendar</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="conversation">
+          <strong>Scenario C:</strong> You want to know whether an idea about working with AI helps
+          people with the same problem understand it and begin experimenting.<br /><br />
+          <button data-choice="conversation">Relevant community or conversation</button>
+          <button data-choice="archive">Archive</button>
+          <button data-choice="local">Local file</button>
+          <div class="feedback"></div>
+        </div>
+
+        <h2>Exercise 2: Design a Minimum Use Experiment</h2>
+        <div class="answer-box">
+          <label><strong>1. The concrete outcome I have already made</strong></label>
+          <textarea
+            id="output"
+            placeholder="For example: Lesson 0002 — Define the Output Before Working with AI"
+          ></textarea>
+          <label><strong>2. The person or situation that genuinely needs it</strong></label>
+          <textarea
+            id="audience"
+            placeholder="For example: a creator or engineer who uses AI and Obsidian but struggles to turn input into output"
+          ></textarea>
+          <label><strong>3. The destination</strong></label>
+          <textarea
+            id="platform"
+            placeholder="For example: a current project, Digital Garden, or GitHub repository"
+          ></textarea>
+          <label><strong>4. How someone will use or respond to it</strong></label>
+          <textarea
+            id="distribution"
+            placeholder="For example: ask one person with the same problem to use it and explain what remains unclear"
+          ></textarea>
+          <label><strong>5. The feedback I will observe</strong></label>
+          <textarea
+            id="feedback"
+            placeholder="For example: whether someone saves it, comments, asks about the workflow, or wants to see the repository"
+          ></textarea>
+          <button id="make" class="secondary">Create the Experiment Brief</button>
+          <div id="result" class="card small"></div>
+        </div>
+      </article>
+    </main>
+    <script>
+      document.querySelectorAll(".exercise").forEach((ex) => {
+        ex.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const ok = btn.dataset.choice === ex.dataset.answer
+            const fb = ex.querySelector(".feedback")
+            fb.textContent = ok
+              ? "Yes: this destination fits the way the outcome is meant to be used."
+              : "Try again: choose the context most likely to help someone understand, use, or respond to the outcome."
+            fb.className = "feedback " + (ok ? "good" : "warn")
+          })
+        })
+      })
+      document.getElementById("make").addEventListener("click", () => {
+        const get = (id) => document.getElementById(id).value.trim() || "(to be added)"
+        document.getElementById("result").textContent =
+          `Minimum use experiment\n\nOutcome: ${get("output")}\nPerson or situation: ${get("audience")}\nDestination: ${get("platform")}\nHow it will be used or answered: ${get("distribution")}\nFeedback to observe: ${get("feedback")}\n\nSmallest next step: let one real person or situation use it, then revise it from the response.`
+      })
+    </script>
+  </body>
+</html>

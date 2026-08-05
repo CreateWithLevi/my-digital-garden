@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Practice — Output-First Prompt</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="pill">Interactive practice</p>
+        <h1>Practice: Define the Output Before Working with AI</h1>
+        <p class="lede">
+          This section contains only the interactive exercise. See the surrounding lesson for the
+          full idea, examples, and course links.
+        </p>
+
+        <div class="callout">
+          <strong>Win condition:</strong> Turn one input into an output-first prompt you can give
+          directly to AI.
+        </div>
+
+        <h2>Exercise 1: Choose the Output</h2>
+        <div class="exercise" data-answer="decision">
+          <strong>Scenario A:</strong> A client suggests a new feature, but you do not know whether
+          it should be built or what it will cost. What output do you need most?<br /><br />
+          <button data-choice="article">Long article draft</button>
+          <button data-choice="decision">Decision note</button>
+          <button data-choice="archive">Archive list</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="post">
+          <strong>Scenario B:</strong> You have just completed a meaningful learning experience and
+          want to turn it into public thinking. What output do you need most?<br /><br />
+          <button data-choice="post">Article draft</button>
+          <button data-choice="invoice">Invoice note</button>
+          <button data-choice="schema">Data model</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="action">
+          <strong>Scenario C:</strong> You organized many ideas but your actions have not changed.
+          What output do you need most?<br /><br />
+          <button data-choice="quote">Quote collection</button>
+          <button data-choice="action">Next action</button>
+          <button data-choice="gallery">Image gallery</button>
+          <div class="feedback"></div>
+        </div>
+
+        <h2>Exercise 2: Create Your Output-First Prompt</h2>
+        <div class="answer-box">
+          <label><strong>Input</strong></label>
+          <textarea id="input" placeholder="What I just heard, read, or experienced…"></textarea>
+          <label><strong>Question</strong></label>
+          <textarea id="question" placeholder="What I actually need to learn or decide…"></textarea>
+          <label><strong>Output</strong></label>
+          <textarea id="output" placeholder="Please first help me produce…"></textarea>
+          <button id="make" class="secondary">Build the Prompt</button>
+          <div id="result" class="card small"></div>
+        </div>
+      </article>
+    </main>
+    <script>
+      document.querySelectorAll(".exercise").forEach((ex) => {
+        ex.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const ok = btn.dataset.choice === ex.dataset.answer
+            const fb = ex.querySelector(".feedback")
+            fb.textContent = ok
+              ? "Yes: this output directly advances the judgment or action."
+              : "Try again: choose the output most likely to change the next action."
+            fb.className = "feedback " + (ok ? "good" : "warn")
+          })
+        })
+      })
+      document.getElementById("make").addEventListener("click", () => {
+        const input = document.getElementById("input").value.trim() || "(add the input)"
+        const question =
+          document.getElementById("question").value.trim() ||
+          "(add what you need to learn or decide)"
+        const output =
+          document.getElementById("output").value.trim() || "(add the concrete outcome you want)"
+        document.getElementById("result").textContent =
+          `What I just saw or experienced: ${input}\n\nWhat I actually need to learn or decide: ${question}\n\nPlease first help me produce: ${output}\n\nDo not aim for perfection yet. Create a version I can revise, and point out where I still need to provide context or judgment.`
+      })
+    </script>
+  </body>
+</html>

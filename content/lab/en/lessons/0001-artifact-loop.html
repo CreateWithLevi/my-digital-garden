@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Practice — The Concrete Outcome Loop</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="pill">Interactive practice</p>
+        <h1>Practice: Turn an Input into a Concrete Outcome</h1>
+        <p class="lede">
+          This section contains only the interactive exercise. See the surrounding lesson for the
+          full idea, further reading, and course links.
+        </p>
+
+        <div class="callout">
+          <strong>Win condition:</strong> Turn one input into the next smallest concrete outcome.
+        </div>
+
+        <h2>Exercise 1: Choose the Outcome Type</h2>
+        <p>
+          The point is not to find the one correct answer. Practice judging which output will make
+          the next step clearer.
+        </p>
+        <div class="exercise" data-answer="brief">
+          <strong>Scenario A:</strong> You read an article about personal branding that relates to
+          your own positioning, but you do not have a complete argument yet.<br /><br />
+          <button data-choice="demo">Demo</button>
+          <button data-choice="brief">Article brief</button>
+          <button data-choice="script">Video script</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="decision">
+          <strong>Scenario B:</strong> You notice that a product may ask users for sensitive
+          information too early and want to clarify a better entry strategy.<br /><br />
+          <button data-choice="quiz">Quiz</button>
+          <button data-choice="decision">Decision note</button>
+          <button data-choice="glossary">Glossary</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="exercise" data-answer="explain">
+          <strong>Scenario C:</strong> You recognize the terms in a technical concept but cannot yet
+          explain it clearly in your own words.<br /><br />
+          <button data-choice="calendar">Calendar</button>
+          <button data-choice="explain">One-page explanation</button>
+          <button data-choice="portfolio">Portfolio</button>
+          <div class="feedback"></div>
+        </div>
+
+        <h2>Exercise 2: Compress Your Topic into One Concrete Outcome</h2>
+        <p>
+          Complete these three sentences. Do not research yet; retrieve what you already understand.
+        </p>
+        <div class="answer-box">
+          <label><strong>1. My current input:</strong></label>
+          <textarea
+            id="input"
+            placeholder="For example: I read an article and realized I do not know how to turn input into output."
+          ></textarea>
+          <label><strong>2. What I actually need to learn or decide:</strong></label>
+          <textarea
+            id="question"
+            placeholder="For example: How can I recognize what an input should become as soon as I encounter it?"
+          ></textarea>
+          <label><strong>3. My next smallest concrete outcome:</strong></label>
+          <textarea
+            id="artifact"
+            placeholder="For example: An 800–1,200 word draft about learning to move from input to output."
+          ></textarea>
+          <button id="check" class="secondary">Check whether it is small enough</button>
+          <div id="checkFeedback" class="feedback"></div>
+        </div>
+      </article>
+    </main>
+    <script>
+      document.querySelectorAll(".exercise").forEach((ex) => {
+        ex.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const ok = btn.dataset.choice === ex.dataset.answer
+            const fb = ex.querySelector(".feedback")
+            fb.textContent = ok
+              ? "Yes: this outcome is small enough and makes the next step clearer."
+              : "Try again: choose the form that will clarify the judgment fastest and leave something you can revisit."
+            fb.className = "feedback " + (ok ? "good" : "warn")
+          })
+        })
+      })
+      document.getElementById("check").addEventListener("click", () => {
+        const a = document.getElementById("artifact").value.trim()
+        const fb = document.getElementById("checkFeedback")
+        const smallWords = [
+          "one page",
+          "30",
+          "60",
+          "90",
+          "brief",
+          "note",
+          "demo",
+          "draft",
+          "checklist",
+          "diagram",
+          "decision",
+          "explanation",
+          "short post",
+        ]
+        const tooBig = ["complete", "everything", "thoroughly", "master", "all of"]
+        const lower = a.toLowerCase()
+        const small = smallWords.some((word) => lower.includes(word))
+        const big = tooBig.some((word) => lower.includes(word))
+        if (!a) {
+          fb.textContent = "Write the next concrete outcome first."
+          fb.className = "feedback warn"
+          return
+        }
+        if (small && !big) {
+          fb.textContent =
+            "This looks small enough. Next, ask AI to help you turn it into a document or task."
+          fb.className = "feedback good"
+        } else {
+          fb.textContent =
+            "It may still be too large. Add a timebox, such as “a one-page note in 30 minutes.”"
+          fb.className = "feedback warn"
+        }
+      })
+    </script>
+  </body>
+</html>

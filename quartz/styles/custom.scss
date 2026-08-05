@@ -66,9 +66,9 @@ article {
   line-height: 1.55;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .page-title {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, calc(0.667rem + 2.667vw), 2rem);
     white-space: nowrap;
   }
 }
