@@ -153,13 +153,6 @@ export default (() => {
     // Url of current page
     const socialUrl =
       fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
-    const ogImageType = ogImagePath.endsWith(".png")
-      ? "png"
-      : ogImagePath.endsWith(".jpg") || ogImagePath.endsWith(".jpeg")
-        ? "jpeg"
-        : ogImagePath.endsWith(".svg")
-          ? "svg+xml"
-          : extension
 
     return (
       <head>
@@ -182,7 +175,7 @@ export default (() => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta property="og:description" content={description} />
-        <meta property="og:image:type" content={`image/${ogImageType}`} />
+        <meta property="og:image:type" content={`image/${extension}`} />
         <meta property="og:image:alt" content={description} />
         {/* Dont set width and height if unknown (when using custom frontmatter image) */}
         {!frontmatterImgUrl && (
@@ -201,15 +194,7 @@ export default (() => {
             <meta property="twitter:url" content={socialUrl}></meta>
           </>
         )}
-        <link rel="icon" href={joinSegments(baseDir, "static/favicon.svg")} type="image/svg+xml" />
-        <link
-          rel="icon"
-          href={joinSegments(baseDir, "static/favicon-32.png")}
-          type="image/png"
-          sizes="32x32"
-        />
-        <link rel="icon" href={iconPath} type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-touch-icon.png")} />
+        <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}

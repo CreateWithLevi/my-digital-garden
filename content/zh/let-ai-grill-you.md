@@ -8,7 +8,6 @@ tags:
 aliases:
   - 不要只問 AI，也讓 AI 反過來問你
 description: 當事情模糊但重要時，先讓 AI 反過來問你，在多輪對話中形成自己的判斷。
-socialImage: og/let-ai-grill-you.png
 ---
 
 這篇文章一開始，其實不是現在這個樣子。
